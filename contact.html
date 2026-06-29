@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact VoltEdge — Book an electrical service, get a free estimate, or reach out for emergency support.">
+    <title>Contact Us | VoltEdge — Electrical & Home Wiring Service</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' stroke='%23D97706' stroke-width='2' fill='none'/%3E%3Cpath d='M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z' fill='%23D97706'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#D97706', secondary: '#1E293B' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO ===== -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img src="assets/banner_contact.png" alt="VoltEdge Contact" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="relative z-10 text-center px-4">
+            <p class="text-[#F59E0B] text-xs font-bold uppercase tracking-[0.35em] mb-4">Contact</p>
+            <h1 class="text-white" style="font-family:'Outfit',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;">Get In Touch</h1>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="py-24 bg-[#F8FAFC] dark:bg-[#0C0F17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="reveal flex flex-col h-full">
+                    <h2 class="section-title mb-2">Send Us a <span class="amber-text">Message</span></h2>
+                    <p class="section-subtitle mb-8">Fill out the form and our team will get back to you within 24 hours.</p>
+
+                    <form class="space-y-5" onsubmit="event.preventDefault();this.innerHTML='<div class=\'text-center py-12\'><div class=\'w-16 h-16 rounded-full bg-[#D97706]/10 flex items-center justify-center mx-auto mb-4\'><i class=\'fas fa-check text-[#D97706] text-2xl\'></i></div><h3 style=\'font-family:Outfit,sans-serif;\' class=\'text-xl font-bold mb-2\'>Message Sent!</h3><p class=\'text-sm text-neutral-500\'>Thank you for reaching out. We\'ll respond within 24 hours.</p></div>';">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-service">Service Needed</label>
+                            <select id="contact-service" class="form-input" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option>Residential Wiring</option>
+                                <option>Panel Upgrade</option>
+                                <option>Lighting Installation</option>
+                                <option>EV Charger Install</option>
+                                <option>Smart Home Wiring</option>
+                                <option>Safety Inspection</option>
+                                <option>Emergency Service</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-input" placeholder="Tell us about your electrical needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-shine">
+                            <i class="fas fa-paper-plane text-xs"></i> Send Message
+                        </button>
+                    </form>
+
+                    <!-- Decorative Image -->
+                    <div class="mt-12 rounded-2xl overflow-hidden shadow-sm border border-[#E2E8F0] dark:border-[#334155] flex-1 min-h-[288px] reveal">
+                        <img src="assets/banner_home.png" alt="VoltEdge Showroom" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="flex flex-col gap-6 reveal text-center lg:text-left">
+                    <h2 class="section-title mb-2">Contact <span class="amber-text">Information</span></h2>
+                    <p class="section-subtitle mb-4">Prefer to reach us directly? Here's how you can connect with our team.</p>
+
+                    <!-- Info Cards -->
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-location-dot text-[#D97706]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-[#1E293B] dark:text-white mb-1">Visit Our Office</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">142 Circuit Lane, Electrical District<br>New York, NY 10013</p>
+                        </div>
+                    </div>
+
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-phone text-[#D97706]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-[#1E293B] dark:text-white mb-1">Call Us</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">+1 (555) 924-7800<br>24/7 Emergency: +1 (555) 924-7911</p>
+                        </div>
+                    </div>
+
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-envelope text-[#D97706]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-[#1E293B] dark:text-white mb-1">Email Us</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">info@voltedge.co<br>emergency@voltedge.co</p>
+                        </div>
+                    </div>
+
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-clock text-[#D97706]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-[#1E293B] dark:text-white mb-1">Business Hours</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">Mon – Fri: 7:00 AM – 6:00 PM<br>Sat: 8:00 AM – 2:00 PM<br>Emergency: 24/7</p>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Banner -->
+                    <div class="bg-gradient-to-r from-[#D97706] to-[#B45309] rounded-2xl p-6 text-center text-white">
+                        <i class="fas fa-bolt text-2xl mb-3"></i>
+                        <h4 class="text-lg font-bold mb-2" style="font-family:'Outfit',sans-serif;">Emergency Service</h4>
+                        <p class="text-sm text-white/80 mb-4">Electrical emergency? We're available 24/7. Call our emergency line now.</p>
+                        <a href="tel:+15559247911" class="btn bg-white text-[#B45309] hover:bg-neutral-100 font-bold btn-sm">
+                            <i class="fas fa-phone text-xs"></i> Call Emergency Line
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== LIVE MAP SECTION ===== -->
+    <section class="pb-24 bg-[#F8FAFC] dark:bg-[#0C0F17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 reveal">
+            <div class="overflow-hidden h-[450px] shadow-xl border border-[#E2E8F0] dark:border-[#334155] rounded-3xl bg-white dark:bg-[#111827]">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.221990129054!2d-74.00840062402773!3d40.71313177139366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21fb017c2f%3A0x6fb879c72e2d978a!2s142%20Broadway%2C%20New%20York%2C%20NY%2010008!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-full grayscale contrast-[0.85] dark:invert dark:contrast-[1.1] dark:opacity-80 transition-all duration-300"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

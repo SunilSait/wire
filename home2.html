@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VoltEdge Premium — Exceptional electrical services for discerning homeowners. White-glove panel upgrades, designer lighting, smart home integration.">
+    <title>Premium | VoltEdge — Electrical & Home Wiring Service</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' stroke='%23D97706' stroke-width='2' fill='none'/%3E%3Cpath d='M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z' fill='%23D97706'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#D97706', secondary: '#1E293B' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO — Full bleed cinematic ===== -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <img src="assets/banner_home2.png" alt="VoltEdge premium electrical work" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/60 to-[#0F172A]/30"></div>
+
+        <div class="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#D97706]/20 backdrop-blur-md border border-[#D97706]/30 text-[#F59E0B] text-xs font-bold uppercase tracking-[0.25em] mb-8 animate-on-scroll zoom-in">
+                <i class="fas fa-crown text-[10px]"></i> Premium Electrical Service
+            </div>
+            <h1 class="text-white leading-[1.05] mb-6 animate-on-scroll slide-up" style="font-family:'Outfit',sans-serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:800;">
+                Brilliance In<br>Every <span class="amber-text">Wire</span>
+            </h1>
+            <p class="text-neutral-300 text-xl leading-relaxed max-w-2xl mx-auto mb-10 animate-on-scroll slide-up" style="animation-delay:0.15s;">
+                White-glove electrical solutions for modern living. Designer lighting, whole-home automation, and precision panel engineering.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 animate-on-scroll slide-up" style="animation-delay:0.25s;">
+                <a href="contact.html" class="btn btn-primary btn-lg btn-shine"><i class="fas fa-bolt text-xs"></i> Schedule Consultation</a>
+                <a href="services.html" class="btn btn-lg border-2 border-white/30 text-white hover:bg-white/10">Explore Services <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 animate-on-scroll slide-up" style="animation-delay:0.4s;">
+            <span class="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+            <div class="w-[1px] h-8 bg-gradient-to-b from-white/50 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED SERVICES — Large image cards ===== -->
+    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Featured Services</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Premium Electrical <span class="amber-text">Solutions</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- Card 1 -->
+                <div class="group relative h-[420px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/service_wiring.png" alt="Residential Wiring" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="badge badge-amber mb-3">Residential</div>
+                        <h3 class="text-white text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif;">Complete Home Wiring</h3>
+                        <p class="text-neutral-300 text-sm leading-relaxed">New construction wiring and full rewiring of older homes with modern safety standards.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="group relative h-[420px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/service_panel.png" alt="Panel Upgrades" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="badge badge-amber mb-3">Upgrades</div>
+                        <h3 class="text-white text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif;">Panel Engineering</h3>
+                        <p class="text-neutral-300 text-sm leading-relaxed">200A panel upgrades, sub-panel installations, and smart breaker integration.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group relative h-[420px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/service_lighting.png" alt="Designer Lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <div class="badge badge-amber mb-3">Design</div>
+                        <h3 class="text-white text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif;">Designer Lighting</h3>
+                        <p class="text-neutral-300 text-sm leading-relaxed">Architectural lighting design, accent installations, and ambient atmosphere creation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION — Horizontal Steps ===== -->
+    <section class="py-16 md:py-28 bg-white dark:bg-[#111827]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Our Process</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">How We <span class="amber-text">Work</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-[#D97706] text-white flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">01</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Inspect</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">We assess your electrical system and identify all issues and opportunities.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-[#D97706] text-white flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">02</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Plan</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">We create a detailed scope of work with transparent pricing and timelines.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-[#D97706] text-white flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">03</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Execute</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Our certified team completes the work efficiently, cleanly, and to code.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-[#D97706] text-white flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">04</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Verify</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">We test everything thoroughly and walk you through the completed work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION — Dark bg with counters ===== -->
+    <section class="py-24 bg-[#1E293B] dark:bg-[#0A0D14] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image:linear-gradient(rgba(217,119,6,0.3) 1px,transparent 1px),linear-gradient(90deg,rgba(217,119,6,0.3) 1px,transparent 1px);background-size:60px 60px;"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center reveal">
+                <div class="p-6">
+                    <span class="text-4xl md:text-5xl font-bold text-[#F59E0B]" style="font-family:'Outfit',sans-serif;" data-counter data-target="5000" data-suffix="+">5000+</span>
+                    <p class="text-neutral-400 text-sm mt-3 uppercase tracking-wider">Projects Completed</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-4xl md:text-5xl font-bold text-[#F59E0B]" style="font-family:'Outfit',sans-serif;" data-counter data-target="20" data-suffix="+">20+</span>
+                    <p class="text-neutral-400 text-sm mt-3 uppercase tracking-wider">Years Experience</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-4xl md:text-5xl font-bold text-[#F59E0B]" style="font-family:'Outfit',sans-serif;" data-counter data-target="50" data-suffix="+">50+</span>
+                    <p class="text-neutral-400 text-sm mt-3 uppercase tracking-wider">Expert Electricians</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-4xl md:text-5xl font-bold text-[#F59E0B]" style="font-family:'Outfit',sans-serif;" data-counter data-target="99" data-suffix="%">99%</span>
+                    <p class="text-neutral-400 text-sm mt-3 uppercase tracking-wider">Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS MARQUEE ===== -->
+    <section class="py-12 bg-[#F8FAFC] dark:bg-[#0C0F17] border-y border-[#E2E8F0] dark:border-[#334155] overflow-hidden">
+        <div class="relative">
+            <div class="flex items-center gap-16 whitespace-nowrap" style="animation: marqueeScroll 25s linear infinite; width: max-content;">
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-certificate text-[#D97706]"></i> NEC Certified</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-shield-halved text-[#D97706]"></i> Licensed & Bonded</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-award text-[#D97706]"></i> BBB A+ Rated</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-leaf text-[#D97706]"></i> Energy Star Partner</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-hard-hat text-[#D97706]"></i> OSHA Compliant</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-bolt text-[#D97706]"></i> Master Electricians</span>
+                <!-- Duplicate for seamless scroll -->
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-certificate text-[#D97706]"></i> NEC Certified</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-shield-halved text-[#D97706]"></i> Licensed & Bonded</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-award text-[#D97706]"></i> BBB A+ Rated</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-leaf text-[#D97706]"></i> Energy Star Partner</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-hard-hat text-[#D97706]"></i> OSHA Compliant</span>
+                <span class="text-neutral-400 text-sm font-semibold uppercase tracking-[0.2em] flex items-center gap-3"><i class="fas fa-bolt text-[#D97706]"></i> Master Electricians</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTERACTIVE LIGHTING MOOD VISUALIZER ===== -->
+    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17] border-t border-[#E2E8F0] dark:border-[#334155]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 reveal">
+            <div class="text-center mb-12">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Lighting Control</p>
+                <h2 class="leading-tight mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Interactive <span class="amber-text">Lighting Scenes</span></h2>
+                <p class="section-subtitle mx-auto text-center">Select an automated lighting mood to see how our custom accent and dimming systems transform your living space.</p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl relative text-white">
+                <div class="absolute inset-0 opacity-[0.02]" style="background-image:radial-gradient(var(--primary) 1px,transparent 1px);background-size:24px 24px;"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch relative z-10">
+                    <!-- Left: Control Selector -->
+                    <div class="flex flex-col justify-between space-y-6">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 flex items-center gap-2" style="font-family:'Outfit',sans-serif;">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#D97706] animate-pulse"></span>
+                                Mood Control Pad
+                            </h4>
+                            <p class="text-xs text-neutral-400">Toggle programmed smart scenes to update brightness and ambient color channels.</p>
+                        </div>
+
+                        <!-- Buttons Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="mood-btn p-4 rounded-xl border border-slate-800 bg-slate-950 hover:border-[#D97706] active transition-all text-center flex flex-col items-center justify-center space-y-2 cursor-pointer" data-mood="bright">
+                                <i class="fas fa-sun text-lg text-amber-400"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Day / Bright</span>
+                            </button>
+                            <button class="mood-btn p-4 rounded-xl border border-slate-800 bg-slate-950 hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-2 cursor-pointer" data-mood="cozy">
+                                <i class="fas fa-mug-hot text-lg text-[#D97706]"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Cozy / Warm</span>
+                            </button>
+                            <button class="mood-btn p-4 rounded-xl border border-slate-800 bg-slate-950 hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-2 cursor-pointer" data-mood="cinema">
+                                <i class="fas fa-film text-lg text-blue-400"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Cinema / Dim</span>
+                            </button>
+                            <button class="mood-btn p-4 rounded-xl border border-slate-800 bg-slate-950 hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-2 cursor-pointer" data-mood="neon">
+                                <i class="fas fa-gamepad text-lg text-fuchsia-400"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Neon / Party</span>
+                            </button>
+                        </div>
+
+                        <!-- Scene Summary -->
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-neutral-400 leading-relaxed" id="mood-summary">
+                            Current Scene: Day / Bright. Maximum output white light (5000K) to replicate clear daylight levels for high visibility tasks.
+                        </div>
+                    </div>
+
+                    <!-- Right: Room Visualization -->
+                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-6 relative overflow-hidden flex flex-col justify-between min-h-[300px]" id="room-visualizer">
+                        <!-- Lighting Overlays -->
+                        <div id="glow-overlay" class="absolute inset-0 transition-all duration-700 pointer-events-none mix-blend-screen" style="background: rgba(255,255,255,0.05);"></div>
+
+                        <div class="flex items-center justify-between z-10">
+                            <span class="text-[10px] font-extrabold text-neutral-500 uppercase tracking-widest">Room Simulator</span>
+                            <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-500 text-[8px] font-bold uppercase tracking-wider flex items-center gap-1" id="lux-indicator">
+                                <i class="fas fa-eye text-[7px]"></i> 100% Output
+                            </span>
+                        </div>
+
+                        <!-- Living Room Elements Mockup -->
+                        <div class="relative w-full h-40 flex items-center justify-center z-10">
+                            <div class="w-full max-w-xs relative border border-slate-800/60 rounded-xl p-4 flex flex-col justify-end items-center h-full transition-all duration-700 bg-slate-900/60" id="room-box">
+                                <!-- Ceiling Spotlights -->
+                                <div class="absolute top-0 left-0 right-0 flex justify-around p-2">
+                                    <span class="w-3 h-1.5 rounded-b bg-slate-700 shadow-md flex items-center justify-center relative"><span class="absolute w-6 h-12 rounded-full blur-sm opacity-50 transition-all duration-700 light-beam" style="background:radial-gradient(circle, #fff, transparent 60%); top:100%;"></span></span>
+                                    <span class="w-3 h-1.5 rounded-b bg-slate-700 shadow-md flex items-center justify-center relative"><span class="absolute w-6 h-12 rounded-full blur-sm opacity-50 transition-all duration-700 light-beam" style="background:radial-gradient(circle, #fff, transparent 60%); top:100%;"></span></span>
+                                    <span class="w-3 h-1.5 rounded-b bg-slate-700 shadow-md flex items-center justify-center relative"><span class="absolute w-6 h-12 rounded-full blur-sm opacity-50 transition-all duration-700 light-beam" style="background:radial-gradient(circle, #fff, transparent 60%); top:100%;"></span></span>
+                                </div>
+
+                                <!-- Ambient Pendant Lamp -->
+                                <div class="absolute top-6 left-12 w-6 h-6 rounded-full border border-slate-700 bg-slate-800 flex items-center justify-center shadow-lg transition-all duration-700" id="room-pendant">
+                                    <span class="w-2.5 h-2.5 rounded-full transition-colors duration-700 bg-white" id="pendant-bulb"></span>
+                                </div>
+
+                                <!-- TV Stand / Smart Cabinet -->
+                                <div class="w-32 h-16 rounded border border-slate-800 bg-slate-950 flex items-center justify-center relative shadow-xl overflow-hidden transition-all duration-700" id="room-tv">
+                                    <span class="text-[9px] font-bold tracking-widest text-neutral-600">SMART TV</span>
+                                    <!-- TV Backlight glow -->
+                                    <span class="absolute inset-0 blur-md opacity-20 transition-all duration-700" style="background: #fff;" id="tv-backlight"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center text-[10px] text-neutral-500 uppercase tracking-widest z-10" id="active-scene-title">
+                            Scene Mode: Bright Task Light
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btns = document.querySelectorAll('.mood-btn');
+            const summary = document.getElementById('mood-summary');
+            const glow = document.getElementById('glow-overlay');
+            const lux = document.getElementById('lux-indicator');
+            const roomBox = document.getElementById('room-box');
+            const roomTv = document.getElementById('room-tv');
+            const pendantBulb = document.getElementById('pendant-bulb');
+            const tvBacklight = document.getElementById('tv-backlight');
+            const activeTitle = document.getElementById('active-scene-title');
+            
+            const beams = document.querySelectorAll('.light-beam');
+
+            const scenes = {
+                bright: {
+                    summary: 'Current Scene: Day / Bright. Maximum output white light (5000K) to replicate clear daylight levels for high visibility tasks.',
+                    glow: 'rgba(255,255,255,0.06)',
+                    lux: '100% Output',
+                    title: 'Scene Mode: Bright Task Light',
+                    beamColor: 'radial-gradient(circle, #fff, transparent 65%)',
+                    beamOpacity: '0.6',
+                    bulbColor: '#ffffff',
+                    tvGlow: 'rgba(255,255,255,0.1)',
+                    boxShadow: 'none'
+                },
+                cozy: {
+                    summary: 'Current Scene: Cozy / Warm. Golden amber ambient lighting (2700K). Perfect for relaxed dining, reading, and hosting evenings.',
+                    glow: 'rgba(217, 119, 6, 0.12)',
+                    lux: '60% Dimmed',
+                    title: 'Scene Mode: Golden Warm Ambient',
+                    beamColor: 'radial-gradient(circle, #F59E0B, transparent 65%)',
+                    beamOpacity: '0.45',
+                    bulbColor: '#F59E0B',
+                    tvGlow: 'rgba(217, 119, 6, 0.15)',
+                    boxShadow: '0 0 20px rgba(217, 119, 6, 0.1)'
+                },
+                cinema: {
+                    summary: 'Current Scene: Cinema / Dim. Deep indigo theme. Spotlight tracks deactivated; low-intensity smart TV backlight panel engaged for zero-glare movie watch.',
+                    glow: 'rgba(59, 130, 246, 0.15)',
+                    lux: '10% Smart Glow',
+                    title: 'Scene Mode: Midnight Movie Chill',
+                    beamColor: 'radial-gradient(circle, #3B82F6, transparent 65%)',
+                    beamOpacity: '0.05',
+                    bulbColor: '#1e293b',
+                    tvGlow: 'rgba(59, 130, 246, 0.45)',
+                    boxShadow: '0 0 25px rgba(59, 130, 246, 0.25)'
+                },
+                neon: {
+                    summary: 'Current Scene: Neon / Party. High-vibrancy entertainment preset. Accents pulse between electric violet and neon magenta.',
+                    glow: 'linear-gradient(135deg, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.15) 100%)',
+                    lux: 'Dynamic Mode',
+                    title: 'Scene Mode: Club Lounge / Gaming',
+                    beamColor: 'radial-gradient(circle, #A855F7, transparent 65%)',
+                    beamOpacity: '0.35',
+                    bulbColor: '#EC4899',
+                    tvGlow: 'rgba(168, 85, 247, 0.4)',
+                    boxShadow: '0 0 30px rgba(236, 72, 153, 0.3)'
+                }
+            };
+
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const mood = btn.getAttribute('data-mood');
+                    const config = scenes[mood];
+
+                    summary.textContent = config.summary;
+                    glow.style.background = config.glow;
+                    lux.textContent = config.lux;
+                    activeTitle.textContent = config.title;
+                    pendantBulb.style.backgroundColor = config.bulbColor;
+                    tvBacklight.style.backgroundColor = config.bulbColor;
+                    tvBacklight.style.boxShadow = config.boxShadow;
+                    
+                    beams.forEach(beam => {
+                        beam.style.background = config.beamColor;
+                        beam.style.opacity = config.beamOpacity;
+                    });
+                });
+            });
+        });
+    </script>
+
+    <!-- ===== INTERACTIVE SMART HOME VISUALIZER ===== -->
+    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17] border-t border-[#E2E8F0] dark:border-[#334155]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 reveal">
+            <div class="text-center mb-12">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Future Proof</p>
+                <h2 class="leading-tight mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Smart Home <span class="amber-text">Integration</span></h2>
+                <p class="section-subtitle mx-auto text-center">Click through our standard smart wiring integrations to see how VoltEdge upgrades your living experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch" data-tabs>
+                <!-- Selection Panel (7 cols) -->
+                <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-4 tab-bar">
+                    <!-- Tab 1 -->
+                    <button class="tab-btn active p-5 rounded-2xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-3 cursor-pointer group" data-tab="smart-lighting">
+                        <div class="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] group-hover:scale-110 transition-transform"><i class="fas fa-lightbulb text-lg"></i></div>
+                        <span class="text-xs font-bold uppercase tracking-wider block">Lighting Control</span>
+                    </button>
+                    <!-- Tab 2 -->
+                    <button class="tab-btn p-5 rounded-2xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-3 cursor-pointer group" data-tab="smart-climate">
+                        <div class="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] group-hover:scale-110 transition-transform"><i class="fas fa-temperature-half text-lg"></i></div>
+                        <span class="text-xs font-bold uppercase tracking-wider block">Climate Sync</span>
+                    </button>
+                    <!-- Tab 3 -->
+                    <button class="tab-btn p-5 rounded-2xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-3 cursor-pointer group" data-tab="smart-security">
+                        <div class="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] group-hover:scale-110 transition-transform"><i class="fas fa-video text-lg"></i></div>
+                        <span class="text-xs font-bold uppercase tracking-wider block">Home Security</span>
+                    </button>
+                    <!-- Tab 4 -->
+                    <button class="tab-btn p-5 rounded-2xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-3 cursor-pointer group" data-tab="smart-media">
+                        <div class="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] group-hover:scale-110 transition-transform"><i class="fas fa-music text-lg"></i></div>
+                        <span class="text-xs font-bold uppercase tracking-wider block">Audio / Video</span>
+                    </button>
+                    <!-- Tab 5 -->
+                    <button class="tab-btn p-5 rounded-2xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-3 cursor-pointer group" data-tab="smart-panel">
+                        <div class="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] group-hover:scale-110 transition-transform"><i class="fas fa-server text-lg"></i></div>
+                        <span class="text-xs font-bold uppercase tracking-wider block">Smart Panel</span>
+                    </button>
+                    <!-- Tab 6 -->
+                    <button class="tab-btn p-5 rounded-2xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] hover:border-[#D97706] transition-all text-center flex flex-col items-center justify-center space-y-3 cursor-pointer group" data-tab="smart-ev">
+                        <div class="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] group-hover:scale-110 transition-transform"><i class="fas fa-charging-station text-lg"></i></div>
+                        <span class="text-xs font-bold uppercase tracking-wider block">EV Optimizer</span>
+                    </button>
+                </div>
+
+                <!-- Display Panel (5 cols) -->
+                <div class="lg:col-span-5 bg-white dark:bg-[#111827] border border-neutral-100 dark:border-[#334155] rounded-3xl p-8 shadow-md flex flex-col justify-between">
+                    <!-- Lighting Details -->
+                    <div data-tab-content="smart-lighting" class="space-y-4">
+                        <h4 class="text-lg font-bold" style="font-family:'Outfit',sans-serif;">Automated Lighting Systems</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Whole-home lighting scenes, motion-activated path lights, and smart dimmer integration. Control any fixture using voice commands or scheduling.</p>
+                        <div class="p-4 rounded-xl bg-neutral-50 dark:bg-[#1E293B]/20 space-y-2">
+                            <p class="text-xs font-bold text-[#D97706]">Wiring Requirements:</p>
+                            <p class="text-xs text-neutral-400">Neutral wire retrofitting, smart switch relay installation, and low-voltage control lines.</p>
+                        </div>
+                    </div>
+
+                    <!-- Climate Details -->
+                    <div data-tab-content="smart-climate" class="space-y-4 hidden">
+                        <h4 class="text-lg font-bold" style="font-family:'Outfit',sans-serif;">Climate Synchronization</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Integrate smart thermostats (Nest, Ecobee) with multi-zone dampers and ceiling fan switches to maximize home heating/cooling efficiency.</p>
+                        <div class="p-4 rounded-xl bg-neutral-50 dark:bg-[#1E293B]/20 space-y-2">
+                            <p class="text-xs font-bold text-[#D97706]">Wiring Requirements:</p>
+                            <p class="text-xs text-neutral-400">Common wire (C-wire) additions to HVAC control board, smart damper actuators, and relays.</p>
+                        </div>
+                    </div>
+
+                    <!-- Security Details -->
+                    <div data-tab-content="smart-security" class="space-y-4 hidden">
+                        <h4 class="text-lg font-bold" style="font-family:'Outfit',sans-serif;">Hardwired Smart Security</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Hardwired smart cameras, smart locks, video doorbells, and perimeter sensor loops. PoE (Power over Ethernet) wiring ensures continuous operation.</p>
+                        <div class="p-4 rounded-xl bg-neutral-50 dark:bg-[#1E293B]/20 space-y-2">
+                            <p class="text-xs font-bold text-[#D97706]">Wiring Requirements:</p>
+                            <p class="text-xs text-neutral-400">Cat6 Ethernet lines to outdoor camera mounts, smart chime junction boxes, and smart lock power feeds.</p>
+                        </div>
+                    </div>
+
+                    <!-- Media Details -->
+                    <div data-tab-content="smart-media" class="space-y-4 hidden">
+                        <h4 class="text-lg font-bold" style="font-family:'Outfit',sans-serif;">Multi-Room Audio & Video</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Structured audio wiring for in-wall speakers, home theaters, and centralized AV media racks. Share high-fidelity sound across rooms.</p>
+                        <div class="p-4 rounded-xl bg-neutral-50 dark:bg-[#1E293B]/20 space-y-2">
+                            <p class="text-xs font-bold text-[#D97706]">Wiring Requirements:</p>
+                            <p class="text-xs text-neutral-400">14-gauge oxygen-free speaker wire runs, hidden HDMI/optical lines, and central media rack enclosures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Smart Panel Details -->
+                    <div data-tab-content="smart-panel" class="space-y-4 hidden">
+                        <h4 class="text-lg font-bold" style="font-family:'Outfit',sans-serif;">Smart Panel Integration</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Upgrade to a smart electrical panel (e.g. Span) to monitor electricity consumption per circuit in real-time, prioritize battery backup loads, and shut off breakers remotely.</p>
+                        <div class="p-4 rounded-xl bg-neutral-50 dark:bg-[#1E293B]/20 space-y-2">
+                            <p class="text-xs font-bold text-[#D97706]">Wiring Requirements:</p>
+                            <p class="text-xs text-neutral-400">Smart breaker panel switchover, ethernet connection, and home battery backup relay wiring.</p>
+                        </div>
+                    </div>
+
+                    <!-- EV Optimizer Details -->
+                    <div data-tab-content="smart-ev" class="space-y-4 hidden">
+                        <h4 class="text-lg font-bold" style="font-family:'Outfit',sans-serif;">EV Charger Load Balancing</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Smart EV charging balancing limits current draw during periods of heavy household electricity use, avoiding panel overloads.</p>
+                        <div class="p-4 rounded-xl bg-neutral-50 dark:bg-[#1E293B]/20 space-y-2">
+                            <p class="text-xs font-bold text-[#D97706]">Wiring Requirements:</p>
+                            <p class="text-xs text-neutral-400">Smart current transformer clamp installation, local controller data lines, and Level 2 charging feeds.</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-secondary btn-full mt-6 text-center text-xs">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS — Premium layout ===== -->
+    <section class="py-16 md:py-28 bg-white dark:bg-[#111827]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Client Stories</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Trusted By <span class="amber-text">Thousands</span></h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 reveal">
+                <div class="card p-10 card-amber">
+                    <div class="flex items-center gap-1 mb-6">
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                    </div>
+                    <p class="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8 italic">"VoltEdge transformed our entire home's electrical system. They installed a smart panel, whole-house surge protection, and a complete lighting redesign. The attention to detail was extraordinary."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#D97706] to-[#B45309] flex items-center justify-center text-white font-bold text-lg">RL</div>
+                        <div>
+                            <p class="font-bold">Rebecca Li</p>
+                            <p class="text-sm text-neutral-400">Interior Designer, West Park</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-10">
+                    <div class="flex items-center gap-1 mb-6">
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                        <i class="fas fa-star text-[#F59E0B]"></i>
+                    </div>
+                    <p class="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8 italic">"As a general contractor, I've worked with many electrical subs. VoltEdge stands out for their reliability, clean work, and communication. They're now my go-to for every project."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#334155] to-[#1E293B] flex items-center justify-center text-white font-bold text-lg">TM</div>
+                        <div>
+                            <p class="font-bold">Tom Martinez</p>
+                            <p class="text-sm text-neutral-400">General Contractor, South Bay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PREMIUM JOB BOOKING & SERVICES LAYOUT ===== -->
+    <section class="py-20 bg-white dark:bg-[#111827] border-t border-[#E2E8F0] dark:border-[#334155] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Premium Information (5 cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="badge badge-amber">VoltEdge Premium</span>
+                    <h2 class="text-3xl font-extrabold tracking-tight text-[#1E293B] dark:text-white" style="font-family:'Outfit',sans-serif;">Our Premium Services & Coverage</h2>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Experience a higher level of electrical care. Certified technicians, upfront estimates, and complete safety compliance.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center shrink-0 text-[#D97706]"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold">100% Certified Electricians</h4>
+                                <p class="text-xs text-neutral-400 mt-0.5">All staff are NEC, OSHA, and Master certified.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center shrink-0 text-[#D97706]"><i class="fas fa-map-location-dot"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold">Service Coverage</h4>
+                                <p class="text-xs text-neutral-400 mt-0.5">Full coverage including West Park, Downtown, North Heights, Lakewood.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Premium Booking Form (7 cols) -->
+                <div class="lg:col-span-7 bg-[#1E293B] dark:bg-[#1E293B]/40 rounded-3xl p-8 shadow-xl border border-white/5 text-white">
+                    <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif;"><i class="fas fa-calendar-check text-[#F59E0B] mr-2"></i> Book Consultation</h3>
+                    <p class="text-xs text-neutral-400 mb-6">Select your service type and pick a date to request a priority callback.</p>
+
+                    <form class="space-y-4" onsubmit="event.preventDefault();this.innerHTML='<div class=\'text-center py-8\'><div class=\'w-14 h-14 rounded-full bg-[#F59E0B]/10 flex items-center justify-center mx-auto mb-4\'><i class=\'fas fa-check text-[#F59E0B] text-xl\'></i></div><h4 class=\'font-bold text-lg mb-1 text-white\'>Request Received!</h4><p class=\'text-xs text-neutral-400\'>We will contact you shortly to schedule your consultation.</p></div>';">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label class="form-label text-[10px] text-neutral-300" for="book-name-2">Name</label>
+                                <input type="text" id="book-name-2" class="form-input py-2 text-sm bg-[#111827]/50 border-white/10 text-white placeholder-white/30" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label text-[10px] text-neutral-300" for="book-phone-2">Phone</label>
+                                <input type="tel" id="book-phone-2" class="form-input py-2 text-sm bg-[#111827]/50 border-white/10 text-white placeholder-white/30" placeholder="(555) 000-0000" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label class="form-label text-[10px] text-neutral-300" for="book-service-2">Requested Service</label>
+                                <select id="book-service-2" class="form-input py-2 text-sm bg-[#111827]/50 border-white/10 text-white" required>
+                                    <option value="" disabled selected>Select service</option>
+                                    <option>Home Rewiring</option>
+                                    <option>Smart Panel Upgrade</option>
+                                    <option>EV Charging System</option>
+                                    <option>Designer Lighting System</option>
+                                    <option>Safety Audit</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label text-[10px] text-neutral-300" for="book-date-2">Preferred Date</label>
+                                <input type="date" id="book-date-2" class="form-input py-2 text-sm bg-[#111827]/50 border-white/10 text-white" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-shine py-3 mt-2 text-sm font-bold uppercase tracking-wider">
+                            Request Consultation Window
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

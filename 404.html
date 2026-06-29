@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found — the page you're looking for seems to be disconnected.">
+    <title>404 — Page Not Found | VoltEdge</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' stroke='%23D97706' stroke-width='2' fill='none'/%3E%3Cpath d='M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z' fill='%23D97706'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#D97706',secondary:'#1E293B'}}}}</script>
+</head>
+<body>
+<div class="auth-page" id="error-page">
+    <div class="auth-top-icons">
+        <button class="dark-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-white dark:bg-[#1E293B] border border-[#E2E8F0] dark:border-[#334155] text-neutral-500 dark:text-neutral-400 hover:border-[#D97706] hover:text-[#D97706] transition-all shadow-sm" title="Toggle Dark Mode">
+            <i class="fas fa-moon text-sm"></i>
+        </button>
+        <button class="rtl-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-white dark:bg-[#1E293B] border border-[#E2E8F0] dark:border-[#334155] text-neutral-500 dark:text-neutral-400 hover:border-[#D97706] hover:text-[#D97706] transition-all shadow-sm" title="Toggle RTL">
+            <i class="fas fa-exchange-alt text-sm"></i>
+        </button>
+    </div>
+
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(217,119,6,0.10) 0%,transparent 70%);top:-200px;right:-200px;"></div>
+        <div class="absolute w-[400px] h-[400px] rounded-full" style="background:radial-gradient(circle,rgba(30,41,59,0.06) 0%,transparent 70%);bottom:-150px;left:-150px;"></div>
+        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(217,119,6,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(217,119,6,0.03) 1px,transparent 1px);background-size:48px 48px;"></div>
+    </div>
+
+    <div class="auth-card animate-on-scroll zoom-in text-center" style="max-width:520px;">
+        <a href="index.html" class="auth-logo">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="amberGrad_404" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--logo-primary)"/>
+                        <stop offset="50%" stop-color="#F59E0B"/>
+                        <stop offset="100%" stop-color="var(--logo-primary)"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="46" stroke="var(--logo-primary)" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+                <circle cx="50" cy="50" r="40" stroke="var(--logo-primary)" stroke-width="0.8" stroke-dasharray="4 3" stroke-opacity="0.3" fill="none"/>
+                <path d="M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z" fill="url(#amberGrad_404)" fill-opacity="0.9" stroke="var(--logo-primary)" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-family:'Outfit',sans-serif;">VoltEdge</span>
+        </a>
+
+        <!-- Circuit pattern decorative element -->
+        <div class="my-8">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="grid grid-cols-3 gap-1.5">
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/20 flex items-center justify-center"><div class="w-2 h-2 rounded-full bg-[#D97706]/60"></div></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/40"></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/20 flex items-center justify-center"><div class="w-2 h-2 rounded-full bg-[#D97706]/60"></div></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/40"></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/60 flex items-center justify-center"><i class="fas fa-bolt text-white text-[10px]"></i></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/40"></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/20 flex items-center justify-center"><div class="w-2 h-2 rounded-full bg-[#D97706]/60"></div></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/40"></div>
+                    <div class="w-7 h-7 rounded-md bg-[#D97706]/20 flex items-center justify-center"><div class="w-2 h-2 rounded-full bg-[#D97706]/60"></div></div>
+                </div>
+            </div>
+            <h1 class="text-8xl font-bold amber-text mb-2" style="font-family:'Outfit',sans-serif;">404</h1>
+        </div>
+
+        <h2 class="text-xl font-bold mb-3" style="font-family:'Outfit',sans-serif;">Circuit Disconnected</h2>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-8 leading-relaxed max-w-sm mx-auto">
+            The page you're looking for doesn't exist. It may have been moved, renamed, or is temporarily unavailable.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="index.html" class="btn btn-primary btn-shine">
+                <i class="fas fa-home text-xs"></i> Back to Home
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+                Contact Support
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

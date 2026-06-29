@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VoltEdge Services — Residential wiring, panel upgrades, lighting installation, EV chargers, smart home wiring, safety inspections. Licensed & insured.">
+    <title>Services | VoltEdge — Electrical & Home Wiring Service</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' stroke='%23D97706' stroke-width='2' fill='none'/%3E%3Cpath d='M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z' fill='%23D97706'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#D97706', secondary: '#1E293B' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO ===== -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img src="assets/banner_services.png" alt="VoltEdge Electrical Services" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="relative z-10 text-center px-4">
+            <p class="text-[#F59E0B] text-xs font-bold uppercase tracking-[0.35em] mb-4">Services</p>
+            <h1 class="text-white" style="font-family:'Outfit',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;">What We Offer</h1>
+        </div>
+    </section>
+
+    <!-- ===== MAIN SERVICES GRID ===== -->
+    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Our Expertise</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Comprehensive Electrical <span class="amber-text">Services</span></h2>
+                <p class="section-subtitle mx-auto mt-4 text-center">From simple outlet installations to complete home rewiring — our certified team handles it all.</p>
+            </div>
+
+            <!-- Service 1 — Wiring -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 reveal">
+                <div class="rounded-3xl overflow-hidden h-[350px] border border-[#E2E8F0] dark:border-[#334155]">
+                    <img src="assets/service_wiring.png" alt="Residential Wiring" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-[#D97706]/10 flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-2xl text-[#D97706]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="font-family:'Outfit',sans-serif;">Residential Wiring & Rewiring</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">Complete electrical wiring for new construction and full rewiring for older homes. We bring your home's electrical system up to modern safety codes with clean, organized installations.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> New construction wiring</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Whole-home rewiring</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Outlet & switch installation</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Dedicated circuits for appliances</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary btn-shine">Get a Quote</a>
+                </div>
+            </div>
+
+            <!-- Service 2 — Panel Upgrades -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 reveal">
+                <div class="order-2 lg:order-1">
+                    <div class="w-14 h-14 rounded-2xl bg-[#D97706]/10 flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-2xl text-[#D97706]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="font-family:'Outfit',sans-serif;">Electrical Panel Upgrades</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">Upgrade your electrical panel from 100A to 200A or higher to meet the demands of modern homes. Essential for EV chargers, home additions, and heavy appliance loads.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> 200A panel upgrades</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Sub-panel installations</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Breaker replacements</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Whole-house surge protection</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary btn-shine">Get a Quote</a>
+                </div>
+                <div class="order-1 lg:order-2 rounded-3xl overflow-hidden h-[350px] border border-[#E2E8F0] dark:border-[#334155]">
+                    <img src="assets/service_panel.png" alt="Panel Upgrades" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Service 3 — Lighting -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 reveal">
+                <div class="rounded-3xl overflow-hidden h-[350px] border border-[#E2E8F0] dark:border-[#334155]">
+                    <img src="assets/service_lighting.png" alt="Lighting Installation" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-[#D97706]/10 flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-2xl text-[#D97706]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="font-family:'Outfit',sans-serif;">Lighting Installation & Design</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">Transform your space with professionally installed lighting. From recessed can lights to elegant chandeliers, outdoor landscape lighting to under-cabinet LEDs.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Recessed & track lighting</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Chandelier & pendant installation</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> Outdoor & landscape lighting</li>
+                        <li class="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400"><i class="fas fa-check text-[#D97706] text-xs"></i> LED upgrades & dimmer switches</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary btn-shine">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADDITIONAL SERVICES ===== -->
+    <section class="py-16 md:py-28 bg-white dark:bg-[#111827]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">More Services</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Additional <span class="amber-text">Offerings</span></h2>
+            </div>
+            <div class="grid-3 reveal">
+                <div class="card p-8 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-charging-station text-2xl text-[#D97706]"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Outfit',sans-serif;">EV Charger Installation</h3>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">Level 2 (240V) EV charger installation for all makes and models. Includes panel assessment and dedicated circuit.</p>
+                    <a href="contact.html" class="btn btn-secondary btn-sm mt-auto">Learn More</a>
+                </div>
+                <div class="card p-8 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-house-signal text-2xl text-[#D97706]"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Outfit',sans-serif;">Smart Home Wiring</h3>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">Future-proof your home with structured cabling for smart thermostats, security, automated lighting, and voice assistants.</p>
+                    <a href="contact.html" class="btn btn-secondary btn-sm mt-auto">Learn More</a>
+                </div>
+                <div class="card p-8 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-halved text-2xl text-[#D97706]"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Outfit',sans-serif;">Safety Inspections</h3>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">Comprehensive electrical safety audits and code compliance inspections for homeowners and real estate transactions.</p>
+                    <a href="contact.html" class="btn btn-secondary btn-sm mt-auto">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="py-16 md:py-28 bg-[#1E293B] dark:bg-[#0A0D14] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#F59E0B] text-xs font-bold uppercase tracking-[0.3em] mb-3">How It Works</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Simple 4-Step Process</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full border-2 border-[#D97706] text-[#F59E0B] flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">1</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Call or Book Online</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Reach out via phone, form, or our online booking system.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full border-2 border-[#D97706] text-[#F59E0B] flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">2</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Free Assessment</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">We visit your home, assess the work, and provide a detailed quote.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full border-2 border-[#D97706] text-[#F59E0B] flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">3</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Expert Installation</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">Our certified electricians complete the work cleanly and to code.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full border-2 border-[#D97706] text-[#F59E0B] flex items-center justify-center mx-auto mb-5 text-xl font-bold" style="font-family:'Outfit',sans-serif;">4</div>
+                    <h4 class="text-base font-bold mb-2" style="font-family:'Outfit',sans-serif;">Final Walkthrough</h4>
+                    <p class="text-sm text-neutral-400 leading-relaxed">We test, verify, and walk you through everything before we leave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTERACTIVE SAFETY CHECKLIST ===== -->
+    <section class="py-16 md:py-28 bg-white dark:bg-[#111827] border-t border-[#E2E8F0] dark:border-[#334155]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 reveal">
+            <div class="text-center mb-12">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Safety First</p>
+                <h2 class="leading-tight mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Electrical <span class="amber-text">Safety Audit</span></h2>
+                <p class="section-subtitle mx-auto text-center">Perform a quick safety self-audit of your home. Select any symptoms you observe to see if you need professional maintenance.</p>
+            </div>
+
+            <div class="bg-neutral-50 dark:bg-[#111827] border border-neutral-200 dark:border-[#334155] rounded-3xl p-8 md:p-10 shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Symptoms Checkboxes -->
+                    <div class="space-y-4">
+                        <h4 class="text-base font-bold" style="font-family:'Outfit',sans-serif;"><i class="fas fa-triangle-exclamation text-[#D97706] mr-2"></i> Select Observed Symptoms</h4>
+                        
+                        <label class="flex items-center gap-3 p-3 rounded-xl border border-neutral-200/60 dark:border-[#334155] hover:border-[#D97706]/40 cursor-pointer bg-white dark:bg-[#1E293B]/20 transition-all">
+                            <input type="checkbox" value="high" class="safety-checkbox w-5 h-5 rounded accent-[#D97706]">
+                            <span class="text-sm font-medium">Flickering or dimming lights</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3 rounded-xl border border-neutral-200/60 dark:border-[#334155] hover:border-[#D97706]/40 cursor-pointer bg-white dark:bg-[#1E293B]/20 transition-all">
+                            <input type="checkbox" value="critical" class="safety-checkbox w-5 h-5 rounded accent-[#D97706]">
+                            <span class="text-sm font-medium">Warm or hot outlet plates</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3 rounded-xl border border-neutral-200/60 dark:border-[#334155] hover:border-[#D97706]/40 cursor-pointer bg-white dark:bg-[#1E293B]/20 transition-all">
+                            <input type="checkbox" value="medium" class="safety-checkbox w-5 h-5 rounded accent-[#D97706]">
+                            <span class="text-sm font-medium">Outlets that do not hold plugs firmly</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3 rounded-xl border border-neutral-200/60 dark:border-[#334155] hover:border-[#D97706]/40 cursor-pointer bg-white dark:bg-[#1E293B]/20 transition-all">
+                            <input type="checkbox" value="critical" class="safety-checkbox w-5 h-5 rounded accent-[#D97706]">
+                            <span class="text-sm font-medium">Frequent breaker tripping / blown fuses</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3 rounded-xl border border-neutral-200/60 dark:border-[#334155] hover:border-[#D97706]/40 cursor-pointer bg-white dark:bg-[#1E293B]/20 transition-all">
+                            <input type="checkbox" value="medium" class="safety-checkbox w-5 h-5 rounded accent-[#D97706]">
+                            <span class="text-sm font-medium">No GFCIs in kitchen/bathrooms</span>
+                        </label>
+                    </div>
+
+                    <!-- Audit Result Card -->
+                    <div class="flex flex-col justify-center items-center p-6 rounded-2xl bg-white dark:bg-[#0A0D14]/40 border border-neutral-200 dark:border-[#334155]">
+                        <h4 class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-4">Assessment Status</h4>
+                        
+                        <div class="w-20 h-20 rounded-full flex items-center justify-center text-3xl mb-4 transition-all duration-300" id="safety-status-icon" style="background: rgba(34, 197, 94, 0.1); color: #22C55E;">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+
+                        <h3 class="text-lg font-bold mb-2 text-center" id="safety-status-title" style="font-family:'Outfit',sans-serif;">Electrical System Healthy</h3>
+                        <p class="text-xs text-neutral-500 dark:text-neutral-400 text-center leading-relaxed mb-6" id="safety-status-desc">No high-risk symptoms selected. Keep up normal electrical habits and schedule regular 5-year audits.</p>
+
+                        <a href="contact.html" class="btn btn-primary btn-shine w-full py-3.5 text-center font-bold">
+                            Schedule Professional Audit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.safety-checkbox');
+            const statusIcon = document.getElementById('safety-status-icon');
+            const statusTitle = document.getElementById('safety-status-title');
+            const statusDesc = document.getElementById('safety-status-desc');
+
+            function evaluateSafety() {
+                let criticalCount = 0;
+                let highCount = 0;
+                let mediumCount = 0;
+
+                checkboxes.forEach(cb => {
+                    if (cb.checked) {
+                        if (cb.value === 'critical') criticalCount++;
+                        else if (cb.value === 'high') highCount++;
+                        else if (cb.value === 'medium') mediumCount++;
+                    }
+                });
+
+                if (criticalCount > 0) {
+                    statusIcon.style.background = 'rgba(239, 68, 68, 0.1)';
+                    statusIcon.style.color = '#EF4444';
+                    statusIcon.innerHTML = '<i class="fas fa-triangle-exclamation"></i>';
+                    statusTitle.textContent = 'Action Required Immediately';
+                    statusTitle.className = 'text-lg font-bold mb-2 text-center text-red-500';
+                    statusDesc.textContent = 'Critical issues detected. Warm outlets or frequent tripping are severe fire hazards. Please contact us for emergency assessment.';
+                } else if (highCount > 0 || mediumCount > 1) {
+                    statusIcon.style.background = 'rgba(234, 179, 8, 0.1)';
+                    statusIcon.style.color = '#EAB308';
+                    statusIcon.innerHTML = '<i class="fas fa-circle-exclamation"></i>';
+                    statusTitle.textContent = 'Service Recommended';
+                    statusTitle.className = 'text-lg font-bold mb-2 text-center text-amber-500';
+                    statusDesc.textContent = 'Moderate risks identified. Flickering lights and loose sockets indicate local wiring degradation. Safe, but upgrades advised.';
+                } else {
+                    statusIcon.style.background = 'rgba(34, 197, 94, 0.1)';
+                    statusIcon.style.color = '#22C55E';
+                    statusIcon.innerHTML = '<i class="fas fa-shield-halved"></i>';
+                    statusTitle.textContent = 'System Status Normal';
+                    statusTitle.className = 'text-lg font-bold mb-2 text-center text-green-500';
+                    statusDesc.textContent = 'No critical electrical warning signs observed. Keep up regular electrical habits and schedule standard safety audits.';
+                }
+            }
+
+            checkboxes.forEach(cb => cb.addEventListener('change', evaluateSafety));
+            evaluateSafety();
+        });
+    </script>
+
+    <!-- ===== SERVICE AREAS & RESPONSE TIMES ===== -->
+    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17] border-t border-[#E2E8F0] dark:border-[#334155]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 reveal">
+            <div class="text-center mb-16">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Coverage & Logistics</p>
+                <h2 class="leading-tight text-[#1E293B] dark:text-white" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Service Areas & <span class="amber-text">Response Rates</span></h2>
+                <p class="section-subtitle mx-auto text-center mt-4">We maintain dispatch depots across key hubs to guarantee quick response times for both routine appointments and emergency calls.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Zone 1 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all text-center">
+                    <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-4 text-[#D97706]"><i class="fas fa-map-pin"></i></div>
+                    <h4 class="font-bold text-base mb-1" style="font-family:'Outfit',sans-serif;">Zone A: Metro Core</h4>
+                    <p class="text-xs text-neutral-400 mb-4">Downtown, Riverside, West End</p>
+                    <div class="pt-4 border-t border-neutral-100 dark:border-[#334155] space-y-2">
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Avg Response:</span><span class="font-bold text-[#D97706]">30 Mins</span></div>
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Electricians On Call:</span><span class="font-bold text-neutral-700 dark:text-white">12 Staff</span></div>
+                    </div>
+                </div>
+                <!-- Zone 2 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all text-center">
+                    <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-4 text-[#D97706]"><i class="fas fa-map-pin"></i></div>
+                    <h4 class="font-bold text-base mb-1" style="font-family:'Outfit',sans-serif;">Zone B: North Suburbs</h4>
+                    <p class="text-xs text-neutral-400 mb-4">North Heights, Pinecrest, Lakewood</p>
+                    <div class="pt-4 border-t border-neutral-100 dark:border-[#334155] space-y-2">
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Avg Response:</span><span class="font-bold text-[#D97706]">45 Mins</span></div>
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Electricians On Call:</span><span class="font-bold text-neutral-700 dark:text-white">8 Staff</span></div>
+                    </div>
+                </div>
+                <!-- Zone 3 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all text-center">
+                    <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-4 text-[#D97706]"><i class="fas fa-map-pin"></i></div>
+                    <h4 class="font-bold text-base mb-1" style="font-family:'Outfit',sans-serif;">Zone C: East Valley</h4>
+                    <p class="text-xs text-neutral-400 mb-4">East Valley, Lakewood East, Outer Ridge</p>
+                    <div class="pt-4 border-t border-neutral-100 dark:border-[#334155] space-y-2">
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Avg Response:</span><span class="font-bold text-[#D97706]">40 Mins</span></div>
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Electricians On Call:</span><span class="font-bold text-neutral-700 dark:text-white">10 Staff</span></div>
+                    </div>
+                </div>
+                <!-- Zone 4 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all text-center">
+                    <div class="w-12 h-12 rounded-xl bg-[#D97706]/10 flex items-center justify-center mx-auto mb-4 text-[#D97706]"><i class="fas fa-map-pin"></i></div>
+                    <h4 class="font-bold text-base mb-1" style="font-family:'Outfit',sans-serif;">Zone D: South Bay</h4>
+                    <p class="text-xs text-neutral-400 mb-4">South Bay, Harbor City, Marina Heights</p>
+                    <div class="pt-4 border-t border-neutral-100 dark:border-[#334155] space-y-2">
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Avg Response:</span><span class="font-bold text-[#D97706]">35 Mins</span></div>
+                        <div class="flex justify-between text-xs text-neutral-500"><span class="font-semibold">Electricians On Call:</span><span class="font-bold text-neutral-700 dark:text-white">14 Staff</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-14 reveal">
+                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">FAQ</p>
+                <h2 class="leading-tight" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Service <span class="amber-text">Questions</span></h2>
+            </div>
+            <div class="space-y-4 reveal">
+                <div class="faq-item">
+                    <div class="faq-question"><h4>How long does a typical rewiring project take?</h4><i class="fas fa-chevron-down text-sm"></i></div>
+                    <div class="faq-answer"><p>A typical whole-home rewiring takes 3–5 days depending on the size of the home. We minimize disruption and clean up daily.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4>Do I need a panel upgrade for an EV charger?</h4><i class="fas fa-chevron-down text-sm"></i></div>
+                    <div class="faq-answer"><p>Not always. We assess your existing panel capacity first. Many homes with 200A panels can accommodate an EV charger without an upgrade.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4>Can you work with my existing smart home devices?</h4><i class="fas fa-chevron-down text-sm"></i></div>
+                    <div class="faq-answer"><p>Absolutely. We're experienced with all major platforms including Google Home, Amazon Alexa, Apple HomeKit, and Samsung SmartThings.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h4>Do you handle permits and inspections?</h4><i class="fas fa-chevron-down text-sm"></i></div>
+                    <div class="faq-answer"><p>Yes, we handle all necessary permits and schedule inspections on your behalf. It's all included in our service.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

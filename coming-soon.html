@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We're wiring something amazing — VoltEdge's new experience is coming soon. Stay tuned.">
+    <title>Coming Soon | VoltEdge</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' stroke='%23D97706' stroke-width='2' fill='none'/%3E%3Cpath d='M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z' fill='%23D97706'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#D97706',secondary:'#1E293B'}}}}</script>
+</head>
+<body>
+<div class="auth-page" id="coming-soon-page" style="min-height:100vh;">
+    <div class="auth-top-icons">
+        <button class="dark-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-white dark:bg-[#1E293B] border border-[#E2E8F0] dark:border-[#334155] text-neutral-500 dark:text-neutral-400 hover:border-[#D97706] hover:text-[#D97706] transition-all shadow-sm" title="Toggle Dark Mode">
+            <i class="fas fa-moon text-sm"></i>
+        </button>
+        <button class="rtl-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-white dark:bg-[#1E293B] border border-[#E2E8F0] dark:border-[#334155] text-neutral-500 dark:text-neutral-400 hover:border-[#D97706] hover:text-[#D97706] transition-all shadow-sm" title="Toggle RTL">
+            <i class="fas fa-exchange-alt text-sm"></i>
+        </button>
+    </div>
+
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(217,119,6,0.12) 0%,transparent 70%);top:-200px;left:-200px;"></div>
+        <div class="absolute w-[500px] h-[500px] rounded-full" style="background:radial-gradient(circle,rgba(217,119,6,0.08) 0%,transparent 70%);bottom:-150px;right:-150px;"></div>
+        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(217,119,6,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(217,119,6,0.03) 1px,transparent 1px);background-size:48px 48px;"></div>
+    </div>
+
+    <div class="auth-card animate-on-scroll zoom-in text-center" style="max-width:520px;">
+        <a href="index.html" class="auth-logo">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="amberGrad_cs" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--logo-primary)"/>
+                        <stop offset="50%" stop-color="#F59E0B"/>
+                        <stop offset="100%" stop-color="var(--logo-primary)"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="46" stroke="var(--logo-primary)" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+                <circle cx="50" cy="50" r="40" stroke="var(--logo-primary)" stroke-width="0.8" stroke-dasharray="4 3" stroke-opacity="0.3" fill="none"/>
+                <path d="M55 18 L38 50 L48 50 L42 82 L68 45 L56 45 L62 18 Z" fill="url(#amberGrad_cs)" fill-opacity="0.9" stroke="var(--logo-primary)" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-family:'Outfit',sans-serif;">VoltEdge</span>
+        </a>
+
+        <!-- Animated lightning icon -->
+        <div class="my-6 flex justify-center">
+            <div class="relative">
+                <div class="w-20 h-20 rounded-2xl bg-[#D97706]/10 border border-[#D97706]/20 flex items-center justify-center" style="animation: electricPulse 2s ease-in-out infinite;">
+                    <i class="fas fa-bolt text-3xl text-[#D97706]"></i>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-3xl font-bold mb-3" style="font-family:'Outfit',sans-serif;">
+            We're Wiring Something <span class="amber-text">Amazing</span>
+        </h1>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-8 leading-relaxed max-w-sm mx-auto">
+            Our new service platform is under construction. Sign up to be the first to know when we go live.
+        </p>
+
+        <!-- Countdown -->
+        <div class="flex items-center justify-center gap-2 sm:gap-4 mb-10" id="countdown">
+            <div class="text-center">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[#D97706]/10 border border-[#D97706]/20 flex items-center justify-center">
+                    <span class="text-xl sm:text-2xl font-bold text-[#D97706]" style="font-family:'Outfit',sans-serif;" id="cd-days">30</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Days</span>
+            </div>
+            <span class="text-lg sm:text-xl text-[#D97706] font-light mt-[-16px]">:</span>
+            <div class="text-center">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[#D97706]/10 border border-[#D97706]/20 flex items-center justify-center">
+                    <span class="text-xl sm:text-2xl font-bold text-[#D97706]" style="font-family:'Outfit',sans-serif;" id="cd-hours">00</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Hours</span>
+            </div>
+            <span class="text-lg sm:text-xl text-[#D97706] font-light mt-[-16px]">:</span>
+            <div class="text-center">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[#D97706]/10 border border-[#D97706]/20 flex items-center justify-center">
+                    <span class="text-xl sm:text-2xl font-bold text-[#D97706]" style="font-family:'Outfit',sans-serif;" id="cd-minutes">00</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Minutes</span>
+            </div>
+            <span class="text-lg sm:text-xl text-[#D97706] font-light mt-[-16px]">:</span>
+            <div class="text-center">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[#D97706]/10 border border-[#D97706]/20 flex items-center justify-center">
+                    <span class="text-xl sm:text-2xl font-bold text-[#D97706]" style="font-family:'Outfit',sans-serif;" id="cd-seconds">00</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Seconds</span>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <form class="flex flex-col sm:flex-row gap-3 mb-6" onsubmit="event.preventDefault();this.innerHTML='<p class=\'text-sm text-amber-500 font-bold py-3\'>⚡ Thank you! We\'ll notify you when we launch.</p>';">
+            <input type="email" required placeholder="Enter your email"
+                class="flex-1 px-4 py-3 text-sm bg-[#F8FAFC] dark:bg-[#1E293B] border border-[#E2E8F0] dark:border-[#334155] focus:border-[#D97706] focus:ring-2 focus:ring-[#D97706]/20 rounded-xl outline-none transition-all dark:text-white placeholder:text-neutral-400" />
+            <button type="submit" class="btn btn-primary btn-shine shrink-0">
+                Notify Me
+            </button>
+        </form>
+
+        <a href="index.html" class="text-sm text-[#D97706] font-semibold hover:underline">
+            <i class="fas fa-arrow-left text-xs mr-1"></i> Back to Home
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
