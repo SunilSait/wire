@@ -102,10 +102,6 @@
                             <i class="fas fa-moon text-sm"></i>
                         </button>
 
-                        <!-- Primary CTA -->
-                        <a href="contact.html" class="hidden xl:inline-flex items-center gap-2 bg-gradient-to-r from-[#D97706] to-[#B45309] text-white px-5 py-2.5 rounded-full text-[12px] font-bold uppercase tracking-widest hover:from-[#F59E0B] hover:to-[#D97706] hover:shadow-lg hover:shadow-[#D97706]/25 transition-all whitespace-nowrap">
-                            Book Now
-                        </a>
 
                         <!-- Secondary CTA -->
                         <a href="signup.html" class="hidden xl:inline-flex items-center gap-2 border border-[#D97706] text-[#D97706] px-5 py-2.5 rounded-full text-[12px] font-bold uppercase tracking-widest hover:bg-[#D97706] hover:text-white transition-all whitespace-nowrap">
@@ -136,7 +132,6 @@
                             </button>
                         </div>
                         <div class="flex gap-2 w-full sm:w-auto">
-                            <a href="contact.html" class="flex-1 sm:flex-none text-center bg-gradient-to-r from-[#D97706] to-[#B45309] text-white px-5 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:from-[#F59E0B] hover:to-[#D97706] transition-all">Book Now</a>
                             <a href="signup.html" class="flex-1 sm:flex-none text-center border border-[#D97706] text-[#D97706] px-5 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[#D97706] hover:text-white transition-all">Sign Up</a>
                         </div>
                     </div>
