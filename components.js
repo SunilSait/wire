@@ -179,6 +179,7 @@
                             <li><a href="about.html" class="footer-link">About</a></li>
                             <li><a href="services.html" class="footer-link">Services</a></li>
                             <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                            <li><a href="quick-book.html" class="footer-link">Quick Book</a></li>
                         </ul>
                     </div>
 
