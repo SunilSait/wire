@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quickly book home wiring, panel upgrades, and lighting installations. Check covered neighborhoods and licenses.">
+    <title>Quick Book | VoltEdge — Electrical & Home Wiring Service</title>
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts (Outfit & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Global Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .service-badge {
+            background-color: rgba(219, 119, 6, 0.08);
+            border: 1px solid rgba(219, 119, 6, 0.2);
+            color: #D97706;
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-[#0A0D14] text-[#1E293B] dark:text-[#E2E8F0] min-h-screen transition-colors duration-300">
+
+    <div id="navbar-container"></div>
+
+    <!-- ===== MAIN PAGE CONTENT ===== -->
+    <main class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16 reveal">
+            <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Instant Booking</p>
+            <h1 class="leading-tight text-[#1E293B] dark:text-white mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;">Reliable <span class="amber-text">Quick Book</span></h1>
+            <p class="section-subtitle mx-auto text-center">A no-frills, direct dispatch system to request emergency work or schedule wiring installations with certified local technicians.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Left Column: Services Offered & Booking Form (7 cols) -->
+            <div class="lg:col-span-7 space-y-8 reveal">
+                <!-- Services Quick View -->
+                <div class="p-8 rounded-3xl border border-neutral-100 dark:border-[#334155] bg-neutral-50/50 dark:bg-[#111827]/50 shadow-md">
+                    <h3 class="text-lg font-bold mb-6 flex items-center gap-2" style="font-family:'Outfit',sans-serif;">
+                        <i class="fas fa-toolbox text-[#D97706]"></i> Core Services Offered
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <!-- Service 1 -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-[#1E293B]/20 border border-neutral-100 dark:border-[#334155]">
+                            <h4 class="font-bold text-sm mb-1 text-[#1E293B] dark:text-white">Home Wiring</h4>
+                            <p class="text-xs text-neutral-400 mb-3">Re-wiring, repairs & additions.</p>
+                            <span class="inline-block text-[10px] font-bold px-2 py-1 rounded service-badge">Avg. 1-3 Days</span>
+                        </div>
+                        <!-- Service 2 -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-[#1E293B]/20 border border-neutral-100 dark:border-[#334155]">
+                            <h4 class="font-bold text-sm mb-1 text-[#1E293B] dark:text-white">Panel Upgrades</h4>
+                            <p class="text-xs text-neutral-400 mb-3">100A to 200A upgrades.</p>
+                            <span class="inline-block text-[10px] font-bold px-2 py-1 rounded service-badge">Avg. 1-2 Days</span>
+                        </div>
+                        <!-- Service 3 -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-[#1E293B]/20 border border-neutral-100 dark:border-[#334155]">
+                            <h4 class="font-bold text-sm mb-1 text-[#1E293B] dark:text-white">Lighting Installs</h4>
+                            <p class="text-xs text-neutral-400 mb-3">LED fixtures & dimming.</p>
+                            <span class="inline-block text-[10px] font-bold px-2 py-1 rounded service-badge">Avg. 4-8 Hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form Box -->
+                <div class="p-8 rounded-3xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] shadow-xl">
+                    <h3 class="text-lg font-bold mb-6 flex items-center gap-2" style="font-family:'Outfit',sans-serif;">
+                        <i class="fas fa-calendar-check text-[#D97706]"></i> Service Dispatch Request
+                    </h3>
+
+                    <form class="space-y-5" onsubmit="event.preventDefault(); alert('Booking request sent successfully! Our dispatcher will call you within 15 minutes.'); this.reset();">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full bg-neutral-50 dark:bg-slate-900 border border-neutral-200 dark:border-[#334155] rounded-xl px-4 py-3 text-sm focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706] outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="(555) 000-0000" required class="w-full bg-neutral-50 dark:bg-slate-900 border border-neutral-200 dark:border-[#334155] rounded-xl px-4 py-3 text-sm focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706] outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Required Service</label>
+                                <select required class="w-full bg-neutral-50 dark:bg-slate-900 border border-neutral-200 dark:border-[#334155] rounded-xl px-4 py-3 text-sm focus:border-[#D97706] outline-none">
+                                    <option value="">Choose Service Category</option>
+                                    <option value="wiring">Residential Home Wiring</option>
+                                    <option value="panel">Breaker Panel Upgrade</option>
+                                    <option value="lighting">Lighting & Dimmer Installation</option>
+                                    <option value="ev">Level 2 EV Charger Outlet</option>
+                                    <option value="audit">Safety Inspection / Code Audit</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Target Date</label>
+                                <input type="date" required class="w-full bg-neutral-50 dark:bg-slate-900 border border-neutral-200 dark:border-[#334155] rounded-xl px-4 py-3 text-sm focus:border-[#D97706] outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Urgency Level</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <label class="p-3.5 rounded-xl border border-neutral-200 dark:border-[#334155] bg-neutral-50 dark:bg-slate-900 text-center cursor-pointer hover:border-[#D97706] transition-all flex items-center justify-center gap-2">
+                                    <input type="radio" name="urgency" value="routine" checked class="accent-[#D97706]">
+                                    <span class="text-xs font-semibold">Routine</span>
+                                </label>
+                                <label class="p-3.5 rounded-xl border border-neutral-200 dark:border-[#334155] bg-neutral-50 dark:bg-slate-900 text-center cursor-pointer hover:border-[#D97706] transition-all flex items-center justify-center gap-2">
+                                    <input type="radio" name="urgency" value="urgent" class="accent-[#D97706]">
+                                    <span class="text-xs font-semibold text-amber-500">Urgent</span>
+                                </label>
+                                <label class="p-3.5 rounded-xl border border-neutral-200 dark:border-[#334155] bg-neutral-50 dark:bg-slate-900 text-center cursor-pointer hover:border-[#D97706] transition-all flex items-center justify-center gap-2">
+                                    <input type="radio" name="urgency" value="emergency" class="accent-[#D97706]">
+                                    <span class="text-xs font-semibold text-red-500 animate-pulse">Emergency</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Brief Job Details</label>
+                            <textarea placeholder="Please describe the wiring issue, panel requirements, or fixtures to install..." rows="3" class="w-full bg-neutral-50 dark:bg-slate-900 border border-neutral-200 dark:border-[#334155] rounded-xl px-4 py-3 text-sm focus:border-[#D97706] outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-shine py-4 text-center font-bold text-sm tracking-wider uppercase rounded-xl">
+                            Request Dispatch & Call
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column: Covered Areas & Certifications (5 cols) -->
+            <div class="lg:col-span-5 space-y-8 reveal">
+                <!-- Operational Status Widget -->
+                <div class="p-6 rounded-3xl bg-slate-900 border border-slate-800 text-white shadow-lg relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-[0.02]" style="background-image:radial-gradient(var(--primary) 1px,transparent 1px);background-size:16px 16px;"></div>
+                    <div class="relative z-10 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">Live Status</span>
+                            <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-green-500/10 text-green-400 text-[8px] font-bold uppercase tracking-wider">
+                                <span class="w-1 h-1 rounded-full bg-green-400 animate-ping"></span> Dispatch Active
+                            </span>
+                        </div>
+                        <h4 class="text-base font-bold" style="font-family:'Outfit',sans-serif;">On-Call Response Time</h4>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-extrabold text-[#D97706]">24</span>
+                            <span class="text-xs text-neutral-400">Minutes average arrival time</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 leading-relaxed">We currently have 4 active master crews cruising service zones to deal with household emergency electrical outages.</p>
+                    </div>
+                </div>
+
+                <!-- Coverage Areas Search & Lists -->
+                <div class="p-8 rounded-3xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] shadow-xl">
+                    <h3 class="text-lg font-bold mb-4 flex items-center gap-2" style="font-family:'Outfit',sans-serif;">
+                        <i class="fas fa-map-location-dot text-[#D97706]"></i> Covered Service Areas
+                    </h3>
+                    <p class="text-xs text-neutral-400 mb-6">Type your neighborhood name below to instantly check coverage status.</p>
+
+                    <!-- Search Input -->
+                    <div class="relative mb-6">
+                        <input type="text" id="area-search" placeholder="Search neighborhood..." class="w-full bg-neutral-50 dark:bg-slate-900 border border-neutral-200 dark:border-[#334155] rounded-xl pl-10 pr-4 py-3 text-sm focus:border-[#D97706] outline-none">
+                        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400 text-xs"></i>
+                    </div>
+
+                    <!-- Neighborhoods grid list -->
+                    <div class="grid grid-cols-2 gap-3" id="neighborhoods-grid">
+                        <div class="p-2.5 rounded-xl border border-neutral-100 dark:border-[#334155] text-xs font-semibold flex items-center gap-2 hover:border-[#D97706]/40 transition-all bg-neutral-50/50 dark:bg-[#1E293B]/20" data-name="downtown">
+                            <i class="fas fa-circle-check text-green-500 text-[10px]"></i> Downtown
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-neutral-100 dark:border-[#334155] text-xs font-semibold flex items-center gap-2 hover:border-[#D97706]/40 transition-all bg-neutral-50/50 dark:bg-[#1E293B]/20" data-name="riverside">
+                            <i class="fas fa-circle-check text-green-500 text-[10px]"></i> Riverside
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-neutral-100 dark:border-[#334155] text-xs font-semibold flex items-center gap-2 hover:border-[#D97706]/40 transition-all bg-neutral-50/50 dark:bg-[#1E293B]/20" data-name="west park">
+                            <i class="fas fa-circle-check text-green-500 text-[10px]"></i> West Park
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-neutral-100 dark:border-[#334155] text-xs font-semibold flex items-center gap-2 hover:border-[#D97706]/40 transition-all bg-neutral-50/50 dark:bg-[#1E293B]/20" data-name="north heights">
+                            <i class="fas fa-circle-check text-green-500 text-[10px]"></i> North Heights
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-neutral-100 dark:border-[#334155] text-xs font-semibold flex items-center gap-2 hover:border-[#D97706]/40 transition-all bg-neutral-50/50 dark:bg-[#1E293B]/20" data-name="pinecrest">
+                            <i class="fas fa-circle-check text-green-500 text-[10px]"></i> Pinecrest
+                        </div>
+                        <div class="p-2.5 rounded-xl border border-neutral-100 dark:border-[#334155] text-xs font-semibold flex items-center gap-2 hover:border-[#D97706]/40 transition-all bg-neutral-50/50 dark:bg-[#1E293B]/20" data-name="lakewood">
+                            <i class="fas fa-circle-check text-green-500 text-[10px]"></i> Lakewood
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Check -->
+                <div class="p-8 rounded-3xl border border-neutral-100 dark:border-[#334155] bg-white dark:bg-[#111827] shadow-xl space-y-6">
+                    <h3 class="text-lg font-bold flex items-center gap-2" style="font-family:'Outfit',sans-serif;">
+                        <i class="fas fa-certificate text-[#D97706]"></i> Active Certifications
+                    </h3>
+
+                    <div class="space-y-4">
+                        <!-- Cert 1 -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center text-[#D97706] flex-shrink-0 text-sm"><i class="fas fa-file-signature"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold">State Electrician License</h4>
+                                <p class="text-xs text-neutral-400 mt-0.5">License #ME-89240-NY (Active Master Class status).</p>
+                            </div>
+                        </div>
+                        <!-- Cert 2 -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center text-[#D97706] flex-shrink-0 text-sm"><i class="fas fa-shield-halved"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold">Bonded & Insured Liability</h4>
+                                <p class="text-xs text-neutral-400 mt-0.5">Underwritten by Liberty Mutual Group up to $5,000,000.</p>
+                            </div>
+                        </div>
+                        <!-- Cert 3 -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-[#D97706]/10 flex items-center justify-center text-[#D97706] flex-shrink-0 text-sm"><i class="fas fa-scale-balanced"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold">NEC Code Compliance</h4>
+                                <p class="text-xs text-neutral-400 mt-0.5">Direct adherence to NFPA fire hazard standard codes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Neighborhood Search Filter Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('area-search');
+            const items = document.querySelectorAll('#neighborhoods-grid [data-name]');
+
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                
+                items.forEach(item => {
+                    const name = item.getAttribute('data-name');
+                    if (name.includes(query)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

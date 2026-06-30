@@ -169,7 +169,8 @@ input, textarea, select, button {
     text-transform: uppercase;
     cursor: pointer;
     transition: var(--transition);
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
     position: relative;
     overflow: hidden;
 }

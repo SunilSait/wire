@@ -19,6 +19,7 @@
         { label: 'About', href: 'about.html' },
         { label: 'Services', href: 'services.html' },
         { label: 'Pricing', href: 'pricing.html' },
+        { label: 'Quick Book', href: 'quick-book.html' },
         { label: 'Contact', href: 'contact.html' }
     ];
 
