@@ -230,7 +230,7 @@
     function injectGlobalStyles() {
         const style = document.createElement('style');
         style.textContent = `
-            .card { display: flex !important; flex-direction: column !important; height: 100% !important; align-self: stretch !important; }
+            .card { display: flex !important; flex-direction: column !important; align-self: stretch !important; }
             .card > *:last-child { margin-top: auto !important; }
             .pricing-card { display: flex !important; flex-direction: column !important; height: 100% !important; align-self: stretch !important; }
             .pricing-card .btn { margin-top: auto !important; }
