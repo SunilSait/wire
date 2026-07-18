@@ -299,91 +299,189 @@
         </div>
     </section>
 
-    <!-- ===== INTERACTIVE LOAD CALCULATOR — Neon Dark Panel ===== -->
-    <section class="py-16 md:py-28 bg-[#F8FAFC] dark:bg-[#0C0F17] border-t border-[#E2E8F0] dark:border-[#334155]">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 reveal">
-            <div class="text-center mb-12">
-                <div class="section-heading-line center"></div>
-                <p class="text-[#D97706] text-xs font-bold uppercase tracking-[0.3em] mb-3">Load Calculator</p>
-                <h2 class="leading-tight mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Is Your Panel <span class="amber-text">Ready?</span></h2>
-                <p class="section-subtitle mx-auto text-center">Calculate your estimated home electrical load to see if your panel meets your power demands.</p>
+    <!-- ===== INTERACTIVE LOAD CALCULATOR — Enhanced with Image & Visual Hierarchy ===== -->
+
+    <section class="py-16 md:py-28 relative overflow-hidden" style="background: linear-gradient(160deg, #080B12 0%, #0C0F17 50%, #0F1420 100%);">
+        <!-- Ambient background -->
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[120px]" style="background:radial-gradient(circle, rgba(217,119,6,0.10) 0%, transparent 70%);transform:translate(20%,-20%);"></div>
+            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full blur-[100px]" style="background:radial-gradient(circle, rgba(245,158,11,0.07) 0%, transparent 70%);transform:translate(-20%,20%);"></div>
+            <div class="absolute inset-0 opacity-[0.02]" style="background-image:radial-gradient(rgba(245,158,11,0.9) 1px, transparent 1px);background-size:30px 30px;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 reveal">
+
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D97706]/30 bg-[#D97706]/10 text-[#F59E0B] text-[10px] font-bold uppercase tracking-[0.3em] mb-4">
+                    <i class="fas fa-bolt text-[9px]"></i> Load Calculator
+                </div>
+                <h2 class="text-white leading-tight mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">
+                    Is Your Panel <span class="amber-text">Ready?</span>
+                </h2>
+                <p class="text-neutral-400 text-base max-w-xl mx-auto leading-relaxed">
+                    Check if your home's electrical panel can handle your power demands. Select appliances below for an instant load estimate.
+                </p>
             </div>
 
-            <div class="neon-calc">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-                    <!-- Appliance List -->
-                    <div>
-                        <h4 class="text-lg font-bold mb-5" style="font-family:'Outfit',sans-serif;"><i class="fas fa-plug text-[#F59E0B] mr-2"></i> Select Appliances</h4>
-                        <div class="space-y-3" id="appliance-checks">
-                            <label class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.03] hover:bg-white/[0.06]">
-                                <input type="checkbox" value="15" checked class="calc-checkbox neon-toggle">
-                                <div>
-                                    <p class="text-sm font-bold text-white">Lighting & Outlets (Basic)</p>
-                                    <p class="text-xs text-neutral-500">Est. 15 Amps</p>
-                                </div>
-                            </label>
-                            <label class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.03] hover:bg-white/[0.06]">
-                                <input type="checkbox" value="30" class="calc-checkbox neon-toggle">
-                                <div>
-                                    <p class="text-sm font-bold text-white">Central Air Conditioning</p>
-                                    <p class="text-xs text-neutral-500">Est. 30 Amps</p>
-                                </div>
-                            </label>
-                            <label class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.03] hover:bg-white/[0.06]">
-                                <input type="checkbox" value="40" class="calc-checkbox neon-toggle">
-                                <div>
-                                    <p class="text-sm font-bold text-white">EV Charger (Level 2)</p>
-                                    <p class="text-xs text-neutral-500">Est. 40 Amps</p>
-                                </div>
-                            </label>
-                            <label class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.03] hover:bg-white/[0.06]">
-                                <input type="checkbox" value="30" class="calc-checkbox neon-toggle">
-                                <div>
-                                    <p class="text-sm font-bold text-white">Electric Dryer</p>
-                                    <p class="text-xs text-neutral-500">Est. 30 Amps</p>
-                                </div>
-                            </label>
-                            <label class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.03] hover:bg-white/[0.06]">
-                                <input type="checkbox" value="45" class="calc-checkbox neon-toggle">
-                                <div>
-                                    <p class="text-sm font-bold text-white">Electric Range/Oven</p>
-                                    <p class="text-xs text-neutral-500">Est. 45 Amps</p>
-                                </div>
-                            </label>
+            <!-- Main 3-col Grid: Image | Appliances | Results -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+
+                <!-- LEFT: Panel Image + Info Badges -->
+                <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl min-h-[420px] flex flex-col justify-end" style="background:#060810;">
+                    <!-- Panel photo -->
+                    <img src="assets/load_calculator_panel.png" alt="Modern residential electrical panel" class="absolute inset-0 w-full h-full object-cover opacity-80">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(6,8,16,0.97) 0%, rgba(6,8,16,0.50) 45%, transparent 100%);"></div>
+
+                    <!-- Top badge -->
+                    <div class="absolute top-4 left-4 z-10">
+                        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest border" style="background:rgba(15,23,42,0.82);backdrop-filter:blur(10px);border-color:rgba(245,158,11,0.35);color:#F59E0B;">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse"></span>
+                            Live Analysis
                         </div>
                     </div>
 
-                    <!-- Result Panel -->
-                    <div class="flex flex-col justify-center items-center p-8 rounded-2xl bg-white/[0.03] border border-white/10">
-                        <h4 class="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-3 text-center">Total Estimated Load</h4>
-                        <div class="text-center mb-6">
-                            <span class="text-7xl font-extrabold text-[#F59E0B] tracking-tight number-ticker" id="calc-total" style="font-family:'Outfit',sans-serif;text-shadow: 0 0 30px rgba(245,158,11,0.3);">15</span>
-                            <span class="text-lg font-bold text-[#F59E0B] ml-1">AMPS</span>
-                        </div>
-
-                        <!-- Neon Progress -->
-                        <div class="w-full space-y-2 mb-6">
-                            <div class="flex justify-between text-xs font-bold text-neutral-500">
-                                <span>100A Panel</span>
-                                <span>200A Panel</span>
+                    <!-- Bottom content -->
+                    <div class="relative z-10 p-6">
+                        <h3 class="text-white font-bold text-base mb-1" style="font-family:'Outfit',sans-serif;">Panel Health Check</h3>
+                        <p class="text-neutral-400 text-xs leading-relaxed mb-5">Identify overload risks before they become safety hazards. Get expert panel evaluation.</p>
+                        <!-- Quick stat chips -->
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[10px] font-bold text-amber-300" style="background:rgba(217,119,6,0.15);border:1px solid rgba(217,119,6,0.25);">
+                                <i class="fas fa-house-chimney text-[9px]"></i> 100A vs 200A
                             </div>
-                            <div class="neon-progress w-full relative">
-                                <div class="neon-fill" id="calc-progress" style="width: 7.5%;"></div>
-                                <div class="absolute left-1/2 top-0 bottom-0 w-[2px] bg-red-500/40"></div>
+                            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[10px] font-bold text-emerald-300" style="background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.2);">
+                                <i class="fas fa-shield-halved text-[9px]"></i> NEC Compliant
+                            </div>
+                            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[10px] font-bold text-sky-300" style="background:rgba(56,189,248,0.10);border:1px solid rgba(56,189,248,0.18);">
+                                <i class="fas fa-clock text-[9px]"></i> Instant Result
                             </div>
                         </div>
-
-                        <!-- Status -->
-                        <div class="text-center p-4 rounded-xl w-full" id="calc-status-box" style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.25);">
-                            <p class="text-sm font-bold text-green-400" id="calc-status-title">⚡ Safe for 100A Service</p>
-                            <p class="text-xs text-neutral-400 mt-1" id="calc-status-desc">Your current power load is safe for a standard 100-amp electrical panel.</p>
-                        </div>
-
-                        <a href="contact.html" class="btn btn-primary btn-shine btn-electric w-full mt-6 text-center">
-                            Request Panel Evaluation
-                        </a>
                     </div>
                 </div>
+
+                <!-- MIDDLE: Appliance Selector -->
+                <div class="rounded-3xl border border-white/10 p-6 flex flex-col" style="background:rgba(255,255,255,0.03);">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-[#F59E0B]" style="background:rgba(217,119,6,0.15);border:1px solid rgba(217,119,6,0.2);">
+                            <i class="fas fa-plug text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold" style="font-family:'Outfit',sans-serif;">Select Appliances</h4>
+                            <p class="text-neutral-500 text-[10px] uppercase tracking-wider">Check all that apply</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 flex-1" id="appliance-checks">
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.02] hover:bg-white/[0.05] group">
+                            <input type="checkbox" value="15" checked class="calc-checkbox neon-toggle shrink-0">
+                            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-amber-400 group-hover:scale-110 transition-transform" style="background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.15);">
+                                <i class="fas fa-lightbulb text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-bold text-white leading-tight">Lighting &amp; Outlets</p>
+                                <p class="text-[10px] text-neutral-500 mt-0.5">Est. 15 Amps · Basic</p>
+                            </div>
+                            <span class="text-[10px] font-bold text-neutral-600 shrink-0">15A</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.02] hover:bg-white/[0.05] group">
+                            <input type="checkbox" value="30" class="calc-checkbox neon-toggle shrink-0">
+                            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-sky-400 group-hover:scale-110 transition-transform" style="background:rgba(56,189,248,0.10);border:1px solid rgba(56,189,248,0.15);">
+                                <i class="fas fa-wind text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-bold text-white leading-tight">Central A/C</p>
+                                <p class="text-[10px] text-neutral-500 mt-0.5">Est. 30 Amps · HVAC</p>
+                            </div>
+                            <span class="text-[10px] font-bold text-neutral-600 shrink-0">30A</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.02] hover:bg-white/[0.05] group">
+                            <input type="checkbox" value="40" class="calc-checkbox neon-toggle shrink-0">
+                            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-emerald-400 group-hover:scale-110 transition-transform" style="background:rgba(16,185,129,0.10);border:1px solid rgba(16,185,129,0.15);">
+                                <i class="fas fa-car text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-bold text-white leading-tight">EV Charger (L2)</p>
+                                <p class="text-[10px] text-neutral-500 mt-0.5">Est. 40 Amps · Electric Vehicle</p>
+                            </div>
+                            <span class="text-[10px] font-bold text-neutral-600 shrink-0">40A</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.02] hover:bg-white/[0.05] group">
+                            <input type="checkbox" value="30" class="calc-checkbox neon-toggle shrink-0">
+                            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-purple-400 group-hover:scale-110 transition-transform" style="background:rgba(168,85,247,0.10);border:1px solid rgba(168,85,247,0.15);">
+                                <i class="fas fa-shirt text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-bold text-white leading-tight">Electric Dryer</p>
+                                <p class="text-[10px] text-neutral-500 mt-0.5">Est. 30 Amps · Laundry</p>
+                            </div>
+                            <span class="text-[10px] font-bold text-neutral-600 shrink-0">30A</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-white/10 hover:border-[#D97706]/40 cursor-pointer transition-all bg-white/[0.02] hover:bg-white/[0.05] group">
+                            <input type="checkbox" value="45" class="calc-checkbox neon-toggle shrink-0">
+                            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 text-rose-400 group-hover:scale-110 transition-transform" style="background:rgba(244,63,94,0.10);border:1px solid rgba(244,63,94,0.15);">
+                                <i class="fas fa-fire-burner text-xs"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-bold text-white leading-tight">Electric Range/Oven</p>
+                                <p class="text-[10px] text-neutral-500 mt-0.5">Est. 45 Amps · Kitchen</p>
+                            </div>
+                            <span class="text-[10px] font-bold text-neutral-600 shrink-0">45A</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Result Panel -->
+                <div class="rounded-3xl border border-white/10 p-6 flex flex-col justify-between" style="background:rgba(255,255,255,0.03);">
+                    <!-- Header -->
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-[#F59E0B]" style="background:rgba(217,119,6,0.15);border:1px solid rgba(217,119,6,0.2);">
+                            <i class="fas fa-gauge-high text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold" style="font-family:'Outfit',sans-serif;">Total Estimated Load</h4>
+                            <p class="text-neutral-500 text-[10px] uppercase tracking-wider">Real-time calculation</p>
+                        </div>
+                    </div>
+
+                    <!-- Big number -->
+                    <div class="text-center py-4">
+                        <div class="relative inline-block">
+                            <span class="text-8xl font-extrabold text-[#F59E0B] tracking-tight number-ticker" id="calc-total" style="font-family:'Outfit',sans-serif;text-shadow:0 0 40px rgba(245,158,11,0.35);">15</span>
+                            <span class="text-xl font-bold text-[#F59E0B] ml-2 align-top mt-3 inline-block">A</span>
+                        </div>
+                        <p class="text-neutral-500 text-xs uppercase tracking-widest mt-1">Amps Required</p>
+                    </div>
+
+                    <!-- Neon progress bar -->
+                    <div class="space-y-2 mb-5">
+                        <div class="flex justify-between text-[10px] font-bold text-neutral-500">
+                            <span>0A</span>
+                            <span class="text-amber-500">80A Safe Limit</span>
+                            <span>200A</span>
+                        </div>
+                        <div class="neon-progress w-full relative">
+                            <div class="neon-fill" id="calc-progress" style="width: 7.5%;"></div>
+                            <div class="absolute" style="left:40%;top:0;bottom:0;width:2px;background:rgba(239,68,68,0.4);"></div>
+                        </div>
+                        <div class="flex justify-between text-[10px] text-neutral-600">
+                            <span>Safe Zone</span>
+                            <span>Upgrade Zone</span>
+                        </div>
+                    </div>
+
+                    <!-- Status box -->
+                    <div class="rounded-2xl p-4 mb-5 transition-all duration-500" id="calc-status-box" style="background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.22);">
+                        <p class="text-sm font-bold text-green-400 mb-1" id="calc-status-title">⚡ Safe for 100A Panel</p>
+                        <p class="text-xs text-neutral-400 leading-relaxed" id="calc-status-desc">Your current load falls comfortably within the safe limit of a 100-Amp electrical panel.</p>
+                    </div>
+
+                    <!-- CTA -->
+                    <a href="contact.html" class="btn btn-primary btn-shine btn-electric w-full text-center">
+                        <i class="fas fa-calendar-check text-xs"></i> Request Panel Evaluation
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -433,6 +531,407 @@
             checkboxes.forEach(cb => cb.addEventListener('change', updateLoad));
             updateLoad();
         });
+    </script>
+
+    <!-- ===== LIGHTING CONTROL — Premium Interactive Scene Selector ===== -->
+    <section id="lighting-control-section" class="py-16 md:py-28 relative overflow-hidden" style="background: linear-gradient(135deg, #0A0D14 0%, #0F172A 40%, #1a1200 70%, #0A0D14 100%);">
+        <!-- Animated ambient background blobs -->
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div id="lc-ambient-blob" class="absolute rounded-full blur-[120px] transition-all duration-1000" style="width:520px;height:520px;top:50%;left:55%;transform:translate(-50%,-50%);background:radial-gradient(circle, rgba(217,119,6,0.18) 0%, transparent 70%);"></div>
+            <div class="absolute top-0 left-0 w-72 h-72 rounded-full blur-[100px]" style="background:rgba(217,119,6,0.06);"></div>
+            <div class="absolute bottom-0 right-0 w-80 h-80 rounded-full blur-[100px]" style="background:rgba(245,158,11,0.05);"></div>
+            <!-- Subtle dot grid -->
+            <div class="absolute inset-0 opacity-[0.025]" style="background-image:radial-gradient(rgba(245,158,11,0.8) 1px, transparent 1px);background-size:28px 28px;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 reveal">
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D97706]/30 bg-[#D97706]/10 text-[#F59E0B] text-[10px] font-bold uppercase tracking-[0.3em] mb-4">
+                    <i class="fas fa-lightbulb text-[9px]"></i> Smart Lighting
+                </div>
+                <h2 class="text-white leading-tight mb-4" style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">
+                    Designer <span class="amber-text">Lighting Control</span>
+                </h2>
+                <p class="text-neutral-400 text-base max-w-xl mx-auto leading-relaxed">
+                    Experience the power of precision lighting. Select a scene below and watch your space transform in real time.
+                </p>
+            </div>
+
+            <!-- Main Grid: Preview | Controls -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+
+                <!-- LEFT: Visual Scene Preview -->
+                <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl min-h-[420px] flex flex-col" id="lc-preview-panel" style="background:#060810; box-shadow: 0 0 60px rgba(0,0,0,0.6);">
+                    <!-- Ceiling rail -->
+                    <div class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-b from-slate-800 to-slate-900 border-b border-white/5 z-10"></div>
+
+                    <!-- Dynamic room glow overlay -->
+                    <div id="lc-room-glow" class="absolute inset-0 transition-all duration-700 pointer-events-none" style="background:radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,255,220,0.12) 0%, transparent 65%);"></div>
+
+                    <!-- Ceiling Spotlights row -->
+                    <div class="absolute top-3 left-0 right-0 flex justify-around px-8 z-20">
+                        <div class="flex flex-col items-center">
+                            <div class="w-4 h-2 rounded-b-full bg-slate-700 border border-white/10"></div>
+                            <div id="lc-beam-1" class="w-8 transition-all duration-700" style="height:160px;background:linear-gradient(to bottom, rgba(255,255,200,0.55) 0%, transparent 100%);filter:blur(6px);border-radius:0 0 50% 50%;"></div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-4 h-2 rounded-b-full bg-slate-700 border border-white/10"></div>
+                            <div id="lc-beam-2" class="w-8 transition-all duration-700" style="height:160px;background:linear-gradient(to bottom, rgba(255,255,200,0.55) 0%, transparent 100%);filter:blur(6px);border-radius:0 0 50% 50%;"></div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-4 h-2 rounded-b-full bg-slate-700 border border-white/10"></div>
+                            <div id="lc-beam-3" class="w-8 transition-all duration-700" style="height:160px;background:linear-gradient(to bottom, rgba(255,255,200,0.55) 0%, transparent 100%);filter:blur(6px);border-radius:0 0 50% 50%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Room interior elements -->
+                    <div class="absolute inset-0 flex flex-col justify-end p-8 pb-12 z-10">
+                        <!-- Accent wall strip light (left) -->
+                        <div id="lc-accent-strip" class="absolute left-0 top-16 bottom-16 w-1.5 rounded-full transition-all duration-700" style="background:linear-gradient(to bottom, rgba(245,158,11,0.9), rgba(217,119,6,0.4));box-shadow:0 0 18px rgba(245,158,11,0.6);"></div>
+
+                        <!-- Furniture silhouettes (pure CSS) -->
+                        <div class="relative w-full">
+                            <!-- Sofa -->
+                            <div class="flex items-end gap-3 mb-4 ml-8">
+                                <div class="rounded-t-xl" id="lc-sofa-back" style="width:180px;height:48px;background:rgba(30,41,59,0.8);border:1px solid rgba(255,255,255,0.06);transition:all 0.7s;"></div>
+                                <div class="rounded" style="width:40px;height:32px;background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.05);"></div>
+                            </div>
+                            <div class="ml-8 rounded-b-xl" id="lc-sofa-seat" style="width:220px;height:28px;background:rgba(20,30,48,0.9);border:1px solid rgba(255,255,255,0.06);transition:all 0.7s;"></div>
+
+                            <!-- Floor lamp -->
+                            <div class="absolute right-12 bottom-0 flex flex-col items-center">
+                                <div id="lc-lamp-head" class="w-10 h-5 rounded-t-full transition-all duration-700" style="background:rgba(245,158,11,0.3);box-shadow:0 -8px 20px rgba(245,158,11,0.4);border:1px solid rgba(245,158,11,0.2);"></div>
+                                <div class="w-0.5 bg-slate-600" style="height:60px;"></div>
+                                <div class="w-8 h-1.5 rounded bg-slate-700"></div>
+                                <!-- Lamp glow -->
+                                <div id="lc-lamp-glow" class="absolute -top-4 w-20 h-20 rounded-full transition-all duration-700 pointer-events-none" style="background:radial-gradient(circle, rgba(245,158,11,0.25) 0%, transparent 70%);filter:blur(8px);transform:translateX(-50%);left:50%;"></div>
+                            </div>
+
+                            <!-- Coffee table -->
+                            <div class="mt-4 mx-auto rounded" style="width:120px;height:12px;background:rgba(15,23,42,0.7);border:1px solid rgba(255,255,255,0.05);margin-left:40px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Scene name badge -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
+                        <div id="lc-scene-badge" class="flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest border transition-all duration-500" style="background:rgba(15,23,42,0.8);backdrop-filter:blur(12px);border-color:rgba(245,158,11,0.35);color:#F59E0B;">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse"></span>
+                            <span id="lc-scene-label">Daylight Bright</span>
+                        </div>
+                    </div>
+
+                    <!-- Top-right status chip -->
+                    <div class="absolute top-5 right-5 z-20 flex items-center gap-2 px-3 py-1.5 rounded-xl text-[10px] font-bold uppercase tracking-wider border transition-all duration-500" id="lc-lux-chip" style="background:rgba(15,23,42,0.75);backdrop-filter:blur(8px);border-color:rgba(245,158,11,0.3);color:#F59E0B;">
+                        <i class="fas fa-circle-half-stroke text-[8px]"></i>
+                        <span id="lc-lux-text">5000K · 100%</span>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Scene Controls -->
+                <div class="flex flex-col gap-6">
+                    <!-- Scene selector cards -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Scene 1: Daylight -->
+                        <button class="lc-scene-btn active-lc group relative p-5 rounded-2xl border text-left transition-all duration-300 cursor-pointer overflow-hidden" data-scene="daylight" style="background:rgba(255,255,255,0.04);border-color:rgba(245,158,11,0.5);">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" style="background:linear-gradient(135deg,rgba(255,255,220,0.06),transparent);"></div>
+                            <div class="relative z-10">
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3 text-amber-300" style="background:rgba(255,255,200,0.15);border:1px solid rgba(255,255,200,0.2);">
+                                    <i class="fas fa-sun text-base"></i>
+                                </div>
+                                <p class="text-white text-sm font-bold mb-0.5">Daylight</p>
+                                <p class="text-neutral-500 text-[10px] uppercase tracking-wider">5000K · Crisp White</p>
+                            </div>
+                            <div class="lc-scene-indicator absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-300" style="background:linear-gradient(90deg,rgba(255,255,200,0.8),rgba(255,220,100,0.4));"></div>
+                        </button>
+
+                        <!-- Scene 2: Cozy Amber -->
+                        <button class="lc-scene-btn group relative p-5 rounded-2xl border text-left transition-all duration-300 cursor-pointer overflow-hidden" data-scene="cozy" style="background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.08);">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" style="background:linear-gradient(135deg,rgba(217,119,6,0.08),transparent);"></div>
+                            <div class="relative z-10">
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3 text-amber-400" style="background:rgba(217,119,6,0.15);border:1px solid rgba(217,119,6,0.2);">
+                                    <i class="fas fa-fire text-base"></i>
+                                </div>
+                                <p class="text-white text-sm font-bold mb-0.5">Cozy Amber</p>
+                                <p class="text-neutral-500 text-[10px] uppercase tracking-wider">2700K · Warm Glow</p>
+                            </div>
+                            <div class="lc-scene-indicator absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-300 opacity-0" style="background:linear-gradient(90deg,rgba(217,119,6,0.9),rgba(245,158,11,0.4));"></div>
+                        </button>
+
+                        <!-- Scene 3: Cinema -->
+                        <button class="lc-scene-btn group relative p-5 rounded-2xl border text-left transition-all duration-300 cursor-pointer overflow-hidden" data-scene="cinema" style="background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.08);">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" style="background:linear-gradient(135deg,rgba(59,130,246,0.08),transparent);"></div>
+                            <div class="relative z-10">
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3 text-blue-400" style="background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.2);">
+                                    <i class="fas fa-film text-base"></i>
+                                </div>
+                                <p class="text-white text-sm font-bold mb-0.5">Cinema</p>
+                                <p class="text-neutral-500 text-[10px] uppercase tracking-wider">3200K · Dim Blue</p>
+                            </div>
+                            <div class="lc-scene-indicator absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-300 opacity-0" style="background:linear-gradient(90deg,rgba(59,130,246,0.9),rgba(99,102,241,0.4));"></div>
+                        </button>
+
+                        <!-- Scene 4: Neon Party -->
+                        <button class="lc-scene-btn group relative p-5 rounded-2xl border text-left transition-all duration-300 cursor-pointer overflow-hidden" data-scene="neon" style="background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.08);">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" style="background:linear-gradient(135deg,rgba(168,85,247,0.08),transparent);"></div>
+                            <div class="relative z-10">
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3 text-fuchsia-400" style="background:rgba(168,85,247,0.12);border:1px solid rgba(168,85,247,0.2);">
+                                    <i class="fas fa-star text-base"></i>
+                                </div>
+                                <p class="text-white text-sm font-bold mb-0.5">Neon Party</p>
+                                <p class="text-neutral-500 text-[10px] uppercase tracking-wider">Dynamic · RGB Pulse</p>
+                            </div>
+                            <div class="lc-scene-indicator absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-300 opacity-0" style="background:linear-gradient(90deg,rgba(168,85,247,0.9),rgba(236,72,153,0.4));"></div>
+                        </button>
+                    </div>
+
+                    <!-- Dimmer Slider -->
+                    <div class="rounded-2xl border border-white/10 p-6" style="background:rgba(255,255,255,0.03);">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-sliders text-[#F59E0B] text-sm"></i>
+                                <span class="text-white text-sm font-bold">Brightness</span>
+                            </div>
+                            <span class="text-[#F59E0B] text-sm font-extrabold" id="lc-brightness-val" style="font-family:'Outfit',sans-serif;">100%</span>
+                        </div>
+                        <div class="relative">
+                            <input type="range" id="lc-dimmer" min="10" max="100" value="100" class="w-full h-2 rounded-full appearance-none cursor-pointer" style="background:linear-gradient(to right, #D97706 0%, #D97706 100%, rgba(255,255,255,0.1) 100%);">
+                        </div>
+                        <div class="flex justify-between text-neutral-600 text-[10px] uppercase tracking-wider mt-2">
+                            <span>Dim</span>
+                            <span>Full</span>
+                        </div>
+                    </div>
+
+                    <!-- Scene Info Card -->
+                    <div id="lc-info-card" class="rounded-2xl border border-[#D97706]/20 p-6 transition-all duration-500" style="background:rgba(217,119,6,0.06);">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-[#F59E0B]" style="background:rgba(217,119,6,0.15);border:1px solid rgba(217,119,6,0.2);">
+                                <i id="lc-info-icon" class="fas fa-sun text-sm"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-white font-bold text-sm mb-1" id="lc-info-title">Daylight Bright Scene</p>
+                                <p class="text-neutral-400 text-xs leading-relaxed" id="lc-info-desc">Maximum white-light output at 5000K to replicate clear natural daylight. Ideal for kitchens, offices, and task-heavy spaces.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3 mt-5">
+                            <div class="text-center p-2.5 rounded-xl" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">
+                                <p class="text-[#F59E0B] font-extrabold text-sm" id="lc-stat-kelvin" style="font-family:'Outfit',sans-serif;">5000K</p>
+                                <p class="text-neutral-500 text-[9px] uppercase tracking-wider mt-0.5">Color Temp</p>
+                            </div>
+                            <div class="text-center p-2.5 rounded-xl" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">
+                                <p class="text-[#F59E0B] font-extrabold text-sm" id="lc-stat-cri" style="font-family:'Outfit',sans-serif;">CRI 95</p>
+                                <p class="text-neutral-500 text-[9px] uppercase tracking-wider mt-0.5">Color Index</p>
+                            </div>
+                            <div class="text-center p-2.5 rounded-xl" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">
+                                <p class="text-[#F59E0B] font-extrabold text-sm" id="lc-stat-lumens" style="font-family:'Outfit',sans-serif;">800 lm</p>
+                                <p class="text-neutral-500 text-[9px] uppercase tracking-wider mt-0.5">Output</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <a href="contact.html" class="btn btn-primary btn-shine btn-full text-center">
+                        <i class="fas fa-bolt text-xs"></i> Get Lighting Installed
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+    /* Dimmer slider track */
+    #lc-dimmer {
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+    }
+    #lc-dimmer::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #F59E0B;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(245,158,11,0.6), 0 0 0 3px rgba(245,158,11,0.15);
+        transition: box-shadow 0.2s;
+    }
+    #lc-dimmer::-webkit-slider-thumb:hover {
+        box-shadow: 0 0 18px rgba(245,158,11,0.8), 0 0 0 5px rgba(245,158,11,0.2);
+    }
+    #lc-dimmer::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #F59E0B;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 0 10px rgba(245,158,11,0.6);
+    }
+    /* Active scene button highlight */
+    .lc-scene-btn.active-lc {
+        border-color: rgba(245,158,11,0.5) !important;
+        background: rgba(217,119,6,0.1) !important;
+    }
+    .lc-scene-btn.active-lc .lc-scene-indicator {
+        opacity: 1 !important;
+    }
+    </style>
+
+    <script>
+    (function () {
+        const scenes = {
+            daylight: {
+                label:    'Daylight Bright',
+                lux:      '5000K · 100%',
+                beamColor:'rgba(255,255,220,0.60)',
+                glow:     'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,255,220,0.18) 0%, transparent 65%)',
+                blob:     'radial-gradient(circle, rgba(255,255,200,0.14) 0%, transparent 70%)',
+                accent:   'linear-gradient(to bottom, rgba(255,255,200,0.7), rgba(245,230,100,0.3))',
+                accentSh: '0 0 14px rgba(255,255,200,0.5)',
+                badgeBorder:'rgba(255,255,220,0.4)',
+                badgeColor: '#fffde0',
+                lampGlow: 'radial-gradient(circle, rgba(255,255,200,0.35) 0%, transparent 70%)',
+                lampHead: 'rgba(255,255,200,0.4)',
+                infoTitle:'Daylight Bright Scene',
+                infoDesc: 'Maximum white-light output at 5000K to replicate clear natural daylight. Ideal for kitchens, offices, and task-heavy spaces.',
+                icon:     'fas fa-sun',
+                kelvin:   '5000K', cri:'CRI 95', lumens:'800 lm',
+                infoBg:   'rgba(255,255,200,0.06)', infoBorder:'rgba(255,255,200,0.2)',
+            },
+            cozy: {
+                label:    'Cozy Amber',
+                lux:      '2700K · 65%',
+                beamColor:'rgba(217,119,6,0.55)',
+                glow:     'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(217,119,6,0.22) 0%, transparent 65%)',
+                blob:     'radial-gradient(circle, rgba(217,119,6,0.22) 0%, transparent 70%)',
+                accent:   'linear-gradient(to bottom, rgba(245,158,11,0.9), rgba(217,119,6,0.4))',
+                accentSh: '0 0 18px rgba(245,158,11,0.6)',
+                badgeBorder:'rgba(217,119,6,0.45)',
+                badgeColor: '#F59E0B',
+                lampGlow: 'radial-gradient(circle, rgba(245,158,11,0.35) 0%, transparent 70%)',
+                lampHead: 'rgba(245,158,11,0.5)',
+                infoTitle:'Cozy Amber Scene',
+                infoDesc: 'Golden 2700K warm-toned ambient glow for relaxed evenings, dining and hosting. Creates an intimate, welcoming atmosphere.',
+                icon:     'fas fa-fire',
+                kelvin:   '2700K', cri:'CRI 90', lumens:'520 lm',
+                infoBg:   'rgba(217,119,6,0.06)', infoBorder:'rgba(217,119,6,0.2)',
+            },
+            cinema: {
+                label:    'Cinema Mode',
+                lux:      '3200K · 15%',
+                beamColor:'rgba(59,130,246,0.18)',
+                glow:     'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 65%)',
+                blob:     'radial-gradient(circle, rgba(59,130,246,0.18) 0%, transparent 70%)',
+                accent:   'linear-gradient(to bottom, rgba(59,130,246,0.7), rgba(99,102,241,0.3))',
+                accentSh: '0 0 18px rgba(59,130,246,0.5)',
+                badgeBorder:'rgba(59,130,246,0.4)',
+                badgeColor: '#93c5fd',
+                lampGlow: 'radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 70%)',
+                lampHead: 'rgba(59,130,246,0.3)',
+                infoTitle:'Cinema Mode Scene',
+                infoDesc: 'Ultra-low 15% blue-tinted bias lighting eliminates screen glare for zero-eye-strain movie watching. Smart TV backlight active.',
+                icon:     'fas fa-film',
+                kelvin:   '3200K', cri:'CRI 85', lumens:'120 lm',
+                infoBg:   'rgba(59,130,246,0.06)', infoBorder:'rgba(59,130,246,0.2)',
+            },
+            neon: {
+                label:    'Neon Party',
+                lux:      'Dynamic · RGB',
+                beamColor:'rgba(168,85,247,0.50)',
+                glow:     'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(168,85,247,0.18) 0%, transparent 65%)',
+                blob:     'radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)',
+                accent:   'linear-gradient(to bottom, rgba(168,85,247,0.9), rgba(236,72,153,0.5))',
+                accentSh: '0 0 22px rgba(168,85,247,0.7)',
+                badgeBorder:'rgba(168,85,247,0.45)',
+                badgeColor: '#d8b4fe',
+                lampGlow: 'radial-gradient(circle, rgba(236,72,153,0.3) 0%, transparent 70%)',
+                lampHead: 'rgba(168,85,247,0.5)',
+                infoTitle:'Neon Party Scene',
+                infoDesc: 'High-vibrancy dynamic RGB preset for entertainment and gaming. Accent strips pulse between electric violet and neon magenta.',
+                icon:     'fas fa-star',
+                kelvin:   'RGB', cri:'CRI 80', lumens:'650 lm',
+                infoBg:   'rgba(168,85,247,0.06)', infoBorder:'rgba(168,85,247,0.2)',
+            }
+        };
+
+        let currentBrightness = 100;
+
+        function applyScene(key) {
+            const s = scenes[key];
+            const brightness = currentBrightness / 100;
+
+            // Update preview panel
+            document.getElementById('lc-room-glow').style.background = s.glow;
+            document.getElementById('lc-ambient-blob').style.background = s.blob;
+            document.getElementById('lc-scene-label').textContent = s.label;
+            document.getElementById('lc-lux-text').textContent = s.lux;
+
+            const beamStyle = `linear-gradient(to bottom, ${s.beamColor} 0%, transparent 100%)`;
+            ['lc-beam-1','lc-beam-2','lc-beam-3'].forEach(id => {
+                const el = document.getElementById(id);
+                el.style.background = beamStyle;
+                el.style.opacity = brightness;
+            });
+
+            document.getElementById('lc-accent-strip').style.background = s.accent;
+            document.getElementById('lc-accent-strip').style.boxShadow = s.accentSh;
+            document.getElementById('lc-lamp-glow').style.background = s.lampGlow;
+            document.getElementById('lc-lamp-head').style.background = s.lampHead;
+
+            const badge = document.getElementById('lc-scene-badge');
+            badge.style.borderColor = s.badgeBorder;
+            badge.style.color = s.badgeColor;
+
+            // Info card
+            document.getElementById('lc-info-card').style.background = s.infoBg;
+            document.getElementById('lc-info-card').style.borderColor = s.infoBorder;
+            document.getElementById('lc-info-title').textContent = s.infoTitle;
+            document.getElementById('lc-info-desc').textContent = s.infoDesc;
+            document.getElementById('lc-info-icon').className = s.icon + ' text-sm';
+            document.getElementById('lc-stat-kelvin').textContent = s.kelvin;
+            document.getElementById('lc-stat-cri').textContent = s.cri;
+            document.getElementById('lc-stat-lumens').textContent = s.lumens;
+        }
+
+        function updateDimmer(val) {
+            currentBrightness = val;
+            document.getElementById('lc-brightness-val').textContent = val + '%';
+            const pct = ((val - 10) / 90) * 100;
+            document.getElementById('lc-dimmer').style.background =
+                `linear-gradient(to right, #D97706 ${pct}%, rgba(255,255,255,0.1) ${pct}%)`;
+            // Re-apply beams with new brightness
+            const activeKey = document.querySelector('.lc-scene-btn.active-lc')?.dataset.scene || 'daylight';
+            const s = scenes[activeKey];
+            const beamStyle = `linear-gradient(to bottom, ${s.beamColor} 0%, transparent 100%)`;
+            ['lc-beam-1','lc-beam-2','lc-beam-3'].forEach(id => {
+                const el = document.getElementById(id);
+                el.style.background = beamStyle;
+                el.style.opacity = val / 100;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scene buttons
+            document.querySelectorAll('.lc-scene-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.lc-scene-btn').forEach(b => b.classList.remove('active-lc'));
+                    btn.classList.add('active-lc');
+                    applyScene(btn.dataset.scene);
+                });
+            });
+
+            // Dimmer
+            const dimmer = document.getElementById('lc-dimmer');
+            dimmer.addEventListener('input', () => updateDimmer(parseInt(dimmer.value)));
+
+            // Init
+            applyScene('daylight');
+            updateDimmer(100);
+        });
+    })();
     </script>
 
     <!-- ===== TESTIMONIALS — Staggered Layout with Avatar Glow ===== -->
